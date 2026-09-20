@@ -123,9 +123,49 @@ html{scrollbar-gutter:stable}
 .layout-drawing .publish-bar{display:none}.layout-drawing .media-slot{overflow:hidden}
 .media-slot:empty::before{content:"";position:absolute;inset:-22%;background:inherit;background-size:120% 120%;transform:translate3d(-3%,0,0) scale(1.04);animation:strip-drift 6s ease-in-out infinite alternate;animation-play-state:paused}
 .media-slot.strip-visible:empty::before{animation-play-state:running}
+.intro-visible:not(.mobile-layout) .hero-frame{opacity:0;pointer-events:none}
 .page-paused .media-slot::before,.panel-open .media-slot::before{animation-play-state:paused}
 @keyframes strip-drift{to{transform:translate3d(3%,-3%,0) scale(1.12)}}
 @media(prefers-reduced-motion:reduce){.media-slot:empty::before{animation:none}}
+
+/* Editor preview and independent fitting controls. */
+.cover img,.cover video{object-fit:var(--card-fit,cover)}
+.mobile-preview-dialog{width:min(470px,calc(100vw - 24px));height:min(940px,calc(100dvh - 24px));padding:0;border:1px solid #ffffff35;background:#141514;box-shadow:0 24px 90px #000b;color:var(--paper)}
+.mobile-preview-dialog::backdrop{background:#000b;backdrop-filter:blur(8px)}
+.mobile-preview-dialog header{height:54px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;border-bottom:1px solid #ffffff20;background:#20221f}
+.mobile-preview-dialog h2{font-size:15px;font-weight:400}.mobile-preview-dialog header button{font-size:13px}.mobile-preview-dialog iframe{display:block;width:390px;height:844px;max-width:100%;height:calc(100% - 54px);margin:0 auto;border:0;background:#10110f}
+
+/* Mobile is a separate composition: the intro is a real second screen and
+   the archive is a horizontal strip, never a circular carousel. */
+@media(max-width:600px){
+  .mobile-layout .runway{height:auto!important}
+  .mobile-layout .stage{position:relative;top:auto;height:auto;min-height:0;display:flex;overflow:visible}
+  .mobile-layout .hero-frame{position:relative;inset:auto;height:100svh;min-height:0;flex:0 0 100svh;background:#171717;opacity:1}
+  .mobile-layout .logo{width:calc(var(--logo-size)*var(--mobile-logo-scale,1));height:calc(var(--logo-size)*var(--mobile-logo-scale,1))}
+  .mobile-layout #scene{display:none!important}
+  .mobile-layout .intro{position:relative;inset:auto;flex:0 0 auto;min-height:100svh;height:auto;overflow:visible;background:var(--ink);transform:none!important}
+  .mobile-layout .intro-content{height:auto;min-height:100svh;padding:96px 20px 42px;justify-content:center;gap:24px}
+  .mobile-layout .manifesto{font-size:calc(var(--mobile-about-size,10.2)*1vw);line-height:.98;letter-spacing:-.045em}
+  .mobile-layout .type-row{gap:.13em;margin-bottom:calc(var(--mobile-row-gap,.14)*1em);min-height:1em}
+  .mobile-layout .type-row .media-slot{width:34%;height:.72em;flex:none}
+  .mobile-layout .type-row:last-child{justify-content:flex-start}
+  .mobile-layout .about-actions{font-size:17px;justify-content:flex-start;gap:28px;margin-top:6px}
+  .mobile-layout .practice{height:auto;min-height:100svh;background:var(--surface)}
+  .mobile-layout .practice-stage{position:relative;top:auto;height:auto;min-height:100svh;overflow:visible;padding:92px 0 44px}
+  .mobile-layout .archive-head{padding:0 20px;gap:12px;align-items:center;flex-wrap:nowrap}
+  .mobile-layout .archive-filters{gap:12px;font-size:12px;white-space:nowrap}
+  .mobile-layout .archive-search{margin-left:auto;flex:0 0 auto}
+  .mobile-layout .archive-search input{width:70px;font-size:12px}
+  .mobile-layout .gallery-viewport{position:relative;inset:auto;height:390px;margin-top:34px;overflow-x:auto;overflow-y:hidden;perspective:none;touch-action:pan-x;scroll-snap-type:x proximity}
+  .mobile-layout .gallery-track{height:100%;min-width:100%;transform:none!important}
+  .mobile-layout .project-card{top:50%;width:var(--mobile-card-width,124px);scroll-snap-align:center}
+  .mobile-layout .gallery-caption{position:relative;left:auto;right:auto;bottom:auto;margin:20px 20px 0;min-height:62px}
+  .mobile-layout .caption-title{font-size:30px}
+  .mobile-layout .archive-bottom{position:relative;left:auto;right:auto;bottom:auto;margin:22px 20px 0}
+  .mobile-layout .gallery-hint{font-size:10px}
+  .mobile-layout .type-row .media-slot{height:calc(var(--media-height,.72)*1em)}
+  .mobile-layout .about-actions .text-link::after{content:none}
+}
 </style>
 </head><body>
   <div class="site-loader" role="status" aria-label="Загрузка сайта"><svg class="site-loader-ring" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20" pathLength="100" /></svg></div>
@@ -185,7 +225,7 @@ html{scrollbar-gutter:stable}
     <ol class="research-list"><li>Интерактивное и генеративное искусство.</li><li>Алгоритмы и искусственный интеллект в творческих процессах.</li><li>Взаимодействие звука и визуальных медиа в цифровой среде.</li><li>Новые формы перформанса: цифровые, аудиовизуальные и гибридные практики.</li></ol>
   </template>
   
-<script id="site-data">window.MEDIA_CONTENT={"items":[{"id":"demo-1","type":"project","title":"проект / 01","date":"","demo":true,"cover":{"kind":"image","src":"","alt":""},"summary":"Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.","body":[],"media":[],"links":[],"coverText":"проект\n01"},{"id":"demo-2","type":"meeting","title":"встреча / 02","date":"","demo":true,"cover":{"kind":"image","src":"","alt":""},"summary":"Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.","body":[],"media":[],"links":[],"coverText":"встреча\n02"},{"id":"demo-3","type":"project","title":"проект / 03","date":"","demo":true,"cover":{"kind":"image","src":"","alt":""},"summary":"Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.","body":[],"media":[],"links":[],"coverText":"проект\n03"},{"id":"demo-4","type":"project","title":"проект / 04","date":"","demo":true,"cover":{"kind":"image","src":"","alt":""},"summary":"Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.","body":[],"media":[],"links":[],"coverText":"проект\n04"},{"id":"demo-5","type":"meeting","title":"встреча / 05","date":"","demo":true,"cover":{"kind":"image","src":"","alt":""},"summary":"Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.","body":[],"media":[],"links":[],"coverText":"встреча\n05"},{"id":"demo-6","type":"project","title":"проект / 06","date":"","demo":true,"cover":{"kind":"image","src":"","alt":""},"summary":"Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.","body":[],"media":[],"links":[],"coverText":"проект\n06"},{"id":"demo-7","type":"project","title":"проект / 07","date":"","demo":true,"cover":{"kind":"image","src":"","alt":""},"summary":"Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.","body":[],"media":[],"links":[],"coverText":"проект\n07"},{"id":"demo-8","type":"meeting","title":"встреча / 08","date":"","demo":true,"cover":{"kind":"image","src":"","alt":""},"summary":"Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.","body":[],"media":[],"links":[],"coverText":"встреча\n08"}],"aboutMedia":[{"kind":"image","src":"","alt":"","width":34,"height":0.74,"fit":"cover"},{"kind":"image","src":"","alt":"","width":27,"height":0.74,"fit":"cover"},{"kind":"image","src":"","alt":"","width":40,"height":0.74,"fit":"cover"}],"aboutLayout":{"textSize":9.4,"mobileTextSize":9.2,"weight":600,"rowGap":0.06,"rowScales":[1,1,1,1,1.12]},"theme":{"accent":"#c8ec01","background":"#10110f","surface":"#171817","text":"#e9e9e1","panelOpacity":0.82,"navSize":16,"logoScale":1,"cardWidth":170,"cardGap":70,"coverTextSize":18},"transition":{"strength":1,"chroma":1,"length":1.5,"rotation":1,"backgroundSpeed":18,"edgeSoftness":32},"social":{"telegram":"","instagram":"","email":"hello@mediakruzhok.example"},"aboutText":["сообщество","артистов из","сибири,","которым","интересно","медиаискусство"],"aboutComposition":[{"items":["text-0","media-0"],"align":"space-between"},{"items":["media-1","text-1"],"align":"space-between"},{"items":["text-2","text-3"],"align":"space-between"},{"items":["text-4","media-2"],"align":"space-between"},{"items":["text-5"],"align":"flex-start"}],"cv":[],"pageSize":12,"publicURL":"https://k-media-circle.github.io/site_circle/"};</script><script data-build-script="hero">(() => {
+<script id="site-data">window.MEDIA_CONTENT={"items":[{"id":"demo-1","type":"project","title":"проект / 01","date":"","demo":true,"cover":{"kind":"image","src":"","alt":""},"summary":"Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.","body":[],"media":[],"links":[],"coverText":"проект\n01"},{"id":"demo-2","type":"meeting","title":"встреча / 02","date":"","demo":true,"cover":{"kind":"image","src":"","alt":""},"summary":"Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.","body":[],"media":[],"links":[],"coverText":"встреча\n02"},{"id":"demo-3","type":"project","title":"проект / 03","date":"","demo":true,"cover":{"kind":"image","src":"","alt":""},"summary":"Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.","body":[],"media":[],"links":[],"coverText":"проект\n03"},{"id":"demo-4","type":"project","title":"проект / 04","date":"","demo":true,"cover":{"kind":"image","src":"","alt":""},"summary":"Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.","body":[],"media":[],"links":[],"coverText":"проект\n04"},{"id":"demo-5","type":"meeting","title":"встреча / 05","date":"","demo":true,"cover":{"kind":"image","src":"","alt":""},"summary":"Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.","body":[],"media":[],"links":[],"coverText":"встреча\n05"},{"id":"demo-6","type":"project","title":"проект / 06","date":"","demo":true,"cover":{"kind":"image","src":"","alt":""},"summary":"Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.","body":[],"media":[],"links":[],"coverText":"проект\n06"},{"id":"demo-7","type":"project","title":"проект / 07","date":"","demo":true,"cover":{"kind":"image","src":"","alt":""},"summary":"Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.","body":[],"media":[],"links":[],"coverText":"проект\n07"},{"id":"demo-8","type":"meeting","title":"встреча / 08","date":"","demo":true,"cover":{"kind":"image","src":"","alt":""},"summary":"Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.","body":[],"media":[],"links":[],"coverText":"встреча\n08"}],"aboutMedia":[{"kind":"image","src":"","alt":"","width":34,"height":0.74,"fit":"cover"},{"kind":"image","src":"","alt":"","width":27,"height":0.74,"fit":"cover"},{"kind":"image","src":"","alt":"","width":40,"height":0.74,"fit":"cover"}],"aboutLayout":{"textSize":9.4,"mobileTextSize":9.2,"weight":600,"rowGap":0.06,"rowScales":[1,1,1,1,1.12],"rowHeights":[],"media":[{"width":34,"height":0.74,"fit":"cover"},{"width":27,"height":0.74,"fit":"cover"},{"width":40,"height":0.74,"fit":"cover"}]},"theme":{"accent":"#c8ec01","background":"#10110f","surface":"#171817","text":"#e9e9e1","panelOpacity":0.82,"navSize":16,"logoScale":1,"cardWidth":170,"cardGap":70,"coverTextSize":18,"cardFit":"cover"},"transition":{"strength":1,"chroma":1,"length":1.5,"rotation":1,"backgroundSpeed":18,"edgeSoftness":32},"social":{"telegram":"","instagram":"","email":"hello@mediakruzhok.example"},"aboutText":["сообщество","артистов из","сибири,","которым","интересно","медиаискусство"],"aboutComposition":[{"items":["text-0","media-0"],"align":"space-between"},{"items":["media-1","text-1"],"align":"space-between"},{"items":["text-2","text-3"],"align":"space-between"},{"items":["text-4","media-2"],"align":"space-between"},{"items":["text-5"],"align":"flex-start"}],"cv":[],"pageSize":12,"publicURL":"https://k-media-circle.github.io/site_circle/","mobileLayout":{"textSize":10.2,"rowGap":0.14,"weight":600,"rowScales":[1,1,1,1,1],"rowHeights":[],"logoScale":1,"cardWidth":124,"cardGap":22,"cardFit":"cover","composition":[{"items":["text-0","media-0"],"align":"space-between"},{"items":["media-1","text-1"],"align":"space-between"},{"items":["text-2","text-3"],"align":"space-between"},{"items":["text-4","media-2"],"align":"space-between"},{"items":["text-5"],"align":"flex-start"}],"media":[{"width":34,"height":0.74,"fit":"cover"},{"width":27,"height":0.74,"fit":"cover"},{"width":40,"height":0.74,"fit":"cover"}]}};</script><script data-build-script="hero">(() => {
   'use strict';
   // Public links can be filled in without touching the animation.
   // The reference is embedded at build time. Its lime silhouette is isolated in
@@ -219,6 +259,7 @@ html{scrollbar-gutter:stable}
   const setting=(key,fallback,min,max)=>{const value=Number(window.MEDIA_CONTENT?.transition?.[key]??fallback);return clamp(Number.isFinite(value)?value:fallback,min,max)};
   const accent=()=>{const value=window.MEDIA_CONTENT?.theme?.accent||'#c8ec01';const hex=/^#[0-9a-f]{6}$/i.test(value)?value:'#c8ec01';return [1,3,5].map(i=>parseInt(hex.slice(i,i+2),16)/255)};
   let logoCanvas=null, logoSize=0, logoCenter=.54;
+  const mobileLayout=()=>matchMedia('(max-width:600px)').matches;
 
   async function loadLogo() {
     const image = new Image();
@@ -420,13 +461,15 @@ html{scrollbar-gutter:stable}
     // Computed CSS width is independent of the fallback's rotation.
     logoSize=parseFloat(getComputedStyle(logo).width)||logoSize;
     logoCenter=viewW<=600?.51:.54;
-    runway.style.height=reducedMotion.matches?'auto':`${viewH*(1+setting('length',1.5,.6,3))}px`;
-    maxScroll=Math.max(1,viewH*setting('length',1.5,.6,3));
+    const mobile=mobileLayout();
+    root.classList.toggle('mobile-layout',mobile);
+    runway.style.height=(reducedMotion.matches||mobile)?'auto':`${viewH*(1+setting('length',1.5,.6,3))}px`;
+    maxScroll=mobile?1:Math.max(1,viewH*setting('length',1.5,.6,3));
     if(renderer) renderer.resize(viewW,viewH);
     readScroll();current=target;paint();
   }
   function readScroll(){
-    target=clamp((window.scrollY-runway.offsetTop)/maxScroll);
+    target=mobileLayout()?1:clamp((window.scrollY-runway.offsetTop)/maxScroll);
     root.classList.toggle('hero-away',target>=.995);
   }
   function paint(){
@@ -443,6 +486,7 @@ html{scrollbar-gutter:stable}
       canvas.dataset.phase=current<.19?'rotation':current<.59?'deformation':current<.99?'reveal':'complete';
       canvas.dataset.progress=current.toFixed(3);lastPaintProgress=current;
     }
+    root.classList.toggle('intro-visible',current>.72);
     if(renderer) renderer.draw(current,a,ambientTime,scrollChroma,seam,bend);
     else{
       logo.style.transform=`translate(-50%,calc(-50% - ${.18*reveal*viewH}px)) rotate(${a}rad) scale(${1-.10*reveal})`;
@@ -482,7 +526,7 @@ html{scrollbar-gutter:stable}
   function navigate(id,focus=false,instant=false){
     if(id==='cv'||id==='about-details'||id.startsWith('project='))return;
     const element=document.getElementById(id);if(!element)return;
-    const y=id==='about'&&!reducedMotion.matches?runway.offsetTop+maxScroll:element.getBoundingClientRect().top+scrollY;
+    const y=id==='about'&&!reducedMotion.matches&&!mobileLayout()?runway.offsetTop+maxScroll:element.getBoundingClientRect().top+scrollY;
     if(id==='about')intro.inert=false;
     window.scrollTo({top:y,behavior:instant||reducedMotion.matches?'instant':'smooth'});
     if(focus)element.focus({preventScroll:true});
@@ -499,7 +543,7 @@ html{scrollbar-gutter:stable}
   reducedMotion.addEventListener('change',updateMotion);
   canvas.addEventListener('webglcontextlost',event=>{event.preventDefault();renderer=null;root.classList.remove('webgl-ready');canvas.dataset.renderer='fallback';requestFrame();});
   canvas.addEventListener('webglcontextrestored',()=>{try{renderer=makeRenderer(logoCanvas);if(renderer){root.classList.add('webgl-ready');canvas.dataset.renderer='webgl';measure();requestFrame();}}catch{}});
-  window.MEDIA_HERO={aboutTop:()=>runway.offsetTop+maxScroll,preview(p){if(reducedMotion.matches)return false;window.scrollTo({top:runway.offsetTop+clamp(p)*maxScroll,behavior:'instant'});readScroll();requestFrame();return true}};
+  window.MEDIA_HERO={aboutTop:()=>mobileLayout()?intro.getBoundingClientRect().top+scrollY:runway.offsetTop+maxScroll,preview(p){if(reducedMotion.matches||mobileLayout())return false;window.scrollTo({top:runway.offsetTop+clamp(p)*maxScroll,behavior:'instant'});readScroll();requestFrame();return true}};
   window.addEventListener('sitesettingschange',()=>{
     const oldMax=maxScroll,oldY=window.scrollY,oldProgress=target;
     measure();
@@ -552,11 +596,12 @@ html{scrollbar-gutter:stable}
     const src=safeURL(media?.src,true);if(!src)return null;
     if(media.kind==='video'){
       const v=el('video');v.src=src;v.playsInline=true;v.controls=controls;v.preload=ambient?'metadata':'none';
+      v.style.objectFit=media.fit==='contain'?'contain':'cover';if(Number(media.height)>0)v.style.height=Number(media.height)+'px';
       v.muted=!controls;v.loop=ambient;const poster=safeURL(media.poster,true);if(poster)v.poster=poster;
       if(ambient){ambientVideos.add(v);mediaVisibility.observe(v)}
       v.addEventListener('error',()=>{v.hidden=true});return v;
     }
-    const img=el('img');img.src=src;img.alt=media.alt||'';img.loading='lazy';img.decoding='async';img.addEventListener('error',()=>img.remove());return img;
+    const img=el('img');img.src=src;img.alt=media.alt||'';img.loading='lazy';img.decoding='async';img.style.objectFit=media.fit==='contain'?'contain':'cover';if(Number(media.height)>0)img.style.height=Number(media.height)+'px';img.addEventListener('error',()=>img.remove());return img;
   }
   function art(index){const a=el('span','cover-art');a.dataset.art=String(index%4);a.setAttribute('aria-hidden','true');return a}
   function cover(item,index){
@@ -568,6 +613,7 @@ html{scrollbar-gutter:stable}
 
   const dialog=$('.side-panel'),panelTitle=$('#panel-title'),panelContent=$('.panel-content');
   let opener=null,restoringFocus=false,keyboardMode=false,routing=false,activeRoute='',closePending=false;
+  let swipeStart=null;
   document.addEventListener('keydown',e=>{if(e.key==='Tab'||e.key.startsWith('Arrow'))keyboardMode=true});
   document.addEventListener('pointerdown',()=>{keyboardMode=false});
   function openPanel(title,kicker,fill,route){
@@ -597,6 +643,15 @@ html{scrollbar-gutter:stable}
     catch{const input=$('.panel-url');input.value=url;input.hidden=false;input.focus();input.select();$('.panel-share').textContent='скопируйте адрес ниже'}
   });
   $('.panel-close').addEventListener('click',closePanel);
+  dialog.addEventListener('touchstart',event=>{
+    if(event.touches.length!==1)return;
+    const touch=event.touches[0];swipeStart={x:touch.clientX,y:touch.clientY};
+  },{passive:true});
+  dialog.addEventListener('touchend',event=>{
+    if(!swipeStart||event.changedTouches.length!==1)return;
+    const touch=event.changedTouches[0],dx=touch.clientX-swipeStart.x,dy=touch.clientY-swipeStart.y;swipeStart=null;
+    if(dx>72&&Math.abs(dy)<Math.max(80,Math.abs(dx)*.65))closePanel();
+  },{passive:true});
   dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closePanel()}});
   dialog.addEventListener('close',()=>{
     dialog.querySelectorAll('video').forEach(v=>v.pause());document.body.classList.remove('panel-open');
@@ -645,6 +700,7 @@ html{scrollbar-gutter:stable}
   let progress=0,target=0,phase=0,frame=0,last=0,inView=false,selected=-1;
   let width=0,height=0,cardWidth=150,cardHeight=200,step=220,padding=40;
   let practiceTop=0,unfoldDistance=1,rowWidth=0,rowPan=0,wasFlat=false;
+  const mobileLayout=()=>matchMedia('(max-width:600px)').matches;
   function openProject(item,index){
     openPanel(item.title,item.demo?'эскиз карточки':(item.type==='meeting'?'встреча':'проект')+(item.date?' / '+item.date:''),container=>{
       const visual=el('div','panel-cover');visual.append(cover(item,index));container.append(visual);
@@ -689,7 +745,9 @@ html{scrollbar-gutter:stable}
   function measure(){
     width=viewport.clientWidth;height=viewport.clientHeight;
     cardWidth=cards[0]?.offsetWidth||Math.max(106,Math.min(200,width*.12));cardHeight=cardWidth*4/3;
-    padding=Math.max(24,width*.055);step=cardWidth+Math.max(25,Math.min(140,Number(data.theme?.cardGap)||Math.max(45,width*.045)));
+    padding=Math.max(24,width*.055);
+    const mobileGap=Number(data.mobileLayout?.cardGap)||22;
+    step=cardWidth+(mobileLayout()?mobileGap:Math.max(25,Math.min(140,Number(data.theme?.cardGap)||Math.max(45,width*.045))));
     practiceTop=practice.offsetTop;
     unfoldDistance=Math.max(1,(practice.offsetHeight-practiceStage.clientHeight)*.68);
     rowWidth=Math.max(width,padding*2+shown.length*step-(step-cardWidth));
@@ -697,9 +755,9 @@ html{scrollbar-gutter:stable}
     readProgress();
     progress=target;
   }
-  function readProgress(){target=motion.matches?1:smooth((scrollY-practiceTop)/unfoldDistance)}
+  function readProgress(){target=(motion.matches||mobileLayout())?1:smooth((scrollY-practiceTop)/unfoldDistance)}
   function unfoldForKeyboard(){
-    if(progress<1&&!motion.matches)window.scrollTo({top:practiceTop+unfoldDistance,behavior:'instant'});
+    if(progress<1&&!motion.matches&&!mobileLayout())window.scrollTo({top:practiceTop+unfoldDistance,behavior:'instant'});
     target=1;progress=1;layout();
   }
   function layout(){
@@ -796,12 +854,14 @@ html{scrollbar-gutter:stable}
 <script data-build-script="layout">(() => {
   'use strict';
   const data=window.MEDIA_CONTENT;
-  const defaults={textSize:9.4,mobileTextSize:9.2,weight:600,rowGap:.06,rowScales:[1,1.02,1.05,1.02,1.18]};
+  const defaults={textSize:9.4,mobileTextSize:9.2,weight:600,rowGap:.06,rowScales:[1,1.02,1.05,1.02,1.18],rowHeights:[]};
   data.aboutLayout={...defaults,...data.aboutLayout};
   data.aboutLayout.rowScales=[...(Array.isArray(data.aboutLayout.rowScales)?data.aboutLayout.rowScales:defaults.rowScales)];
-  const themeDefaults={accent:'#c8ec01',background:'#10110f',surface:'#171817',text:'#e9e9e1',panelOpacity:.82,navSize:16,logoScale:1,cardWidth:170,cardGap:70,coverTextSize:18};
+  const themeDefaults={accent:'#c8ec01',background:'#10110f',surface:'#171817',text:'#e9e9e1',panelOpacity:.82,navSize:16,logoScale:1,cardWidth:170,cardGap:70,coverTextSize:18,cardFit:'cover'};
   const effectDefaults={strength:1,chroma:1,length:1.5,rotation:1,backgroundSpeed:18,edgeSoftness:32};
+  const mobileDefaults={textSize:10.2,rowGap:.14,weight:600,rowScales:[1,1,1,1,1],rowHeights:[],logoScale:1,cardWidth:124,cardGap:22,cardFit:'cover'};
   data.theme={...themeDefaults,...data.theme};data.transition={...effectDefaults,...data.transition};
+  data.mobileLayout={...mobileDefaults,...data.mobileLayout};
   data.aboutText??=['сообщество','артистов из','сибири,','которым','интересно','медиаискусство'];
   const defaultComposition=()=>{
     const composition=[
@@ -816,6 +876,13 @@ html{scrollbar-gutter:stable}
     return composition;
   };
   data.aboutComposition??=defaultComposition();
+  const cloneRows=rows=>Array.isArray(rows)?rows.map(row=>({items:Array.isArray(row?.items)?[...row.items]:[],align:row?.align||'space-between'})):null;
+  const mediaLayoutDefaults=()=>data.aboutMedia.map(media=>({width:media.width??34,height:media.height??.76,fit:media.fit==='contain'?'contain':'cover'}));
+  data.aboutLayout.media=Array.isArray(data.aboutLayout.media)?data.aboutLayout.media:mediaLayoutDefaults();
+  data.mobileLayout.composition=cloneRows(data.mobileLayout.composition)||cloneRows(data.aboutComposition)||[];
+  data.mobileLayout.media=Array.isArray(data.mobileLayout.media)?data.mobileLayout.media:mediaLayoutDefaults();
+  data.mobileLayout.rowScales=[...(Array.isArray(data.mobileLayout.rowScales)?data.mobileLayout.rowScales:mobileDefaults.rowScales)];
+  data.mobileLayout.rowHeights=[...(Array.isArray(data.mobileLayout.rowHeights)?data.mobileLayout.rowHeights:[])];
 
   const root=document.documentElement,manifesto=document.querySelector('.manifesto');
   let rows=Array.from(manifesto.querySelectorAll('.type-row'));
@@ -823,6 +890,10 @@ html{scrollbar-gutter:stable}
   const slotNodes=Array.from(manifesto.querySelectorAll('[data-slot]'));
   const tokens=new Map([...textNodes.map((node,i)=>['text-'+i,node]),...slotNodes.map(node=>['media-'+node.dataset.slot,node])]);
   let compositionKey='';
+  const isMobileMode=()=>root.classList.contains('mobile-layout')||root.classList.contains('layout-mobile-edit')||root.classList.contains('mobile-preview-mode');
+  const activeLayout=()=>isMobileMode()?data.mobileLayout:data.aboutLayout;
+  const activeComposition=()=>isMobileMode()?data.mobileLayout.composition:data.aboutComposition;
+  const mediaConfig=index=>activeLayout().media?.[index]||data.aboutMedia[index]||{};
   function syncSlots(){
     let changed=false;
     for(const [id,node] of tokens)if(id.startsWith('media-')&&Number(id.slice(6))>=data.aboutMedia.length){node.remove();tokens.delete(id);changed=true}
@@ -835,12 +906,14 @@ html{scrollbar-gutter:stable}
   }
   function compose(){
     const slotsChanged=syncSlots();
-    const key=JSON.stringify(data.aboutComposition);if(key===compositionKey&&!slotsChanged)return;
+    const composition=activeComposition();
+    const key=(isMobileMode()?'mobile:':'desktop:')+JSON.stringify(composition);if(key===compositionKey&&!slotsChanged)return;
     compositionKey=key;
     // Move existing nodes so uploaded media, text identity and video observers survive.
-    rows=data.aboutComposition.map((line,i)=>{
+    rows=composition.map((line,i)=>{
       const row=document.createElement('span');row.className='type-row';row.dataset.row=String(i);
       row.style.justifyContent=line.align||'space-between';
+      const rowHeight=activeLayout().rowHeights?.[i];if(Number(rowHeight)>0)row.style.minHeight=bound(rowHeight,.25,4,1)+'em';
       line.items.forEach(id=>{const node=tokens.get(id);if(node)row.append(node)});row.hidden=!line.items.length;return row;
     });
     manifesto.replaceChildren(...rows);
@@ -854,14 +927,15 @@ html{scrollbar-gutter:stable}
     fitFrame=requestAnimationFrame(()=>{
       const base=parseFloat(getComputedStyle(manifesto).fontSize);
       // Measure only on settings changes/resizes, never inside the scroll loop.
-      rows.forEach((row,i)=>{row.style.fontSize=(base*bound(data.aboutLayout.rowScales?.[i]??1,.5,1.5,1))+'px'});
+      const layout=activeLayout();
+      rows.forEach((row,i)=>{row.style.fontSize=(base*bound(layout.rowScales?.[i]??1,.5,1.5,1))+'px'});
       rows.forEach(row=>{
         const children=Array.from(row.children),gap=parseFloat(getComputedStyle(row).columnGap)||0;
         const media=children.filter(n=>n.classList.contains('media-slot'));
         const text=children.filter(n=>!n.classList.contains('media-slot'));
-        const total=media.reduce((sum,n)=>sum+bound(data.aboutMedia[Number(n.dataset.slot)]?.width,5,95,34),0);
+        const total=media.reduce((sum,n)=>sum+bound(mediaConfig(Number(n.dataset.slot)).width,5,95,34),0);
         const budget=text.length?80:96;
-        media.forEach(n=>n.style.setProperty('--media-width',bound(data.aboutMedia[Number(n.dataset.slot)]?.width,5,95,34)*Math.min(1,budget/Math.max(total,1))));
+        media.forEach(n=>{const config=mediaConfig(Number(n.dataset.slot));n.style.setProperty('--media-width',bound(config.width,5,95,34)*Math.min(1,budget/Math.max(total,1)));n.style.setProperty('--media-height',bound(config.height,.25,3,.76));n.style.setProperty('--media-fit',config.fit==='contain'?'contain':'cover')});
         const width=text.reduce((sum,n)=>sum+n.getBoundingClientRect().width,0);
         const available=row.clientWidth-media.reduce((sum,n)=>sum+n.getBoundingClientRect().width,0)-gap*Math.max(0,children.length-1);
         if(width>available&&available>0)row.style.fontSize=(parseFloat(getComputedStyle(row).fontSize)*available/width*.995)+'px';
@@ -881,7 +955,7 @@ html{scrollbar-gutter:stable}
         const slots=Array.from(row.querySelectorAll('.media-slot'));if(!slots.length||!metrics)return;
         const text=Array.from(row.children).find(n=>!n.classList.contains('media-slot')),size=parseFloat(getComputedStyle(row).fontSize);
         if(!text){slots.forEach(slot=>slot.style.setProperty('--media-offset','0px'));return}
-        metrics.font=`${data.aboutLayout.weight} ${size}px Arial`;
+        metrics.font=`${layout.weight} ${size}px Arial`;
         const m=metrics.measureText(text.textContent);
         const fa=m.fontBoundingBoxAscent??size*.9,fd=m.fontBoundingBoxDescent??size*.22;
         const ascent=m.actualBoundingBoxAscent??size*.73,descent=m.actualBoundingBoxDescent??0;
@@ -904,20 +978,27 @@ html{scrollbar-gutter:stable}
     }
     const layout=data.aboutLayout;
     root.style.setProperty('--about-text-size',bound(layout.textSize,5,14,9.4));
-    root.style.setProperty('--about-mobile-size',bound(layout.mobileTextSize,5,14,9.2));
+    root.style.setProperty('--about-mobile-size',bound(data.mobileLayout.textSize,7,14,mobileDefaults.textSize));
     root.style.setProperty('--about-weight',bound(layout.weight,400,800,600));
     root.style.setProperty('--about-row-gap',bound(layout.rowGap,0,.4,.06));
+    const mobile=data.mobileLayout;
+    root.style.setProperty('--mobile-about-size',bound(mobile.textSize,7,14,mobileDefaults.textSize));
+    root.style.setProperty('--mobile-row-gap',bound(mobile.rowGap,0,.5,mobileDefaults.rowGap));
+    root.style.setProperty('--mobile-card-width',bound(mobile.cardWidth,90,180,mobileDefaults.cardWidth)+'px');
+    root.style.setProperty('--mobile-card-gap',bound(mobile.cardGap,8,60,mobileDefaults.cardGap)+'px');
+    root.style.setProperty('--mobile-logo-scale',bound(mobile.logoScale,.6,1.3,mobileDefaults.logoScale));
+    root.style.setProperty('--card-fit',isMobileMode()?((mobile.cardFit==='contain')?'contain':'cover'):(theme.cardFit==='contain'?'contain':'cover'));
     document.querySelectorAll('[data-slot]').forEach(slot=>{
-      const media=data.aboutMedia[Number(slot.dataset.slot)]||{};
+      const media=mediaConfig(Number(slot.dataset.slot));
       slot.style.setProperty('--media-width',bound(media.width,5,95,34));
-      slot.style.setProperty('--media-height',bound(media.height,.25,1.5,.76));
+      slot.style.setProperty('--media-height',bound(media.height,.25,3,.76));
       slot.style.setProperty('--media-fit',media.fit==='contain'?'contain':'cover');
     });
     root.style.setProperty('--edge-softness',bound(data.transition.edgeSoftness,4,80,32)+'px');
     fit();
     window.dispatchEvent(new Event('sitesettingschange'));
   }
-  window.MEDIA_LAYOUT={apply,defaults,themeDefaults,effectDefaults,defaultComposition,tokens};
+  window.MEDIA_LAYOUT={apply,defaults,mobileDefaults,themeDefaults,effectDefaults,defaultComposition,tokens,cloneRows,activeLayout,activeComposition,mediaConfig};
   window.addEventListener('resize',fit,{passive:true});apply();
 })();
 </script></body></html>
