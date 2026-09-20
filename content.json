@@ -1,37 +1,4 @@
 {
-  "social": {
-    "telegram": "",
-    "instagram": "",
-    "email": "hello@mediakruzhok.example"
-  },
-  "aboutMedia": [
-    {
-      "kind": "image",
-      "src": "",
-      "alt": "",
-      "width": 34,
-      "height": 0.74,
-      "fit": "cover"
-    },
-    {
-      "kind": "image",
-      "src": "",
-      "alt": "",
-      "width": 27,
-      "height": 0.74,
-      "fit": "cover"
-    },
-    {
-      "kind": "image",
-      "src": "",
-      "alt": "",
-      "width": 40,
-      "height": 0.74,
-      "fit": "cover"
-    }
-  ],
-  "cv": [],
-  "pageSize": 12,
   "items": [
     {
       "id": "demo-1",
@@ -170,6 +137,32 @@
       "coverText": "встреча\n08"
     }
   ],
+  "aboutMedia": [
+    {
+      "kind": "image",
+      "src": "",
+      "alt": "",
+      "width": 34,
+      "height": 0.74,
+      "fit": "cover"
+    },
+    {
+      "kind": "image",
+      "src": "",
+      "alt": "",
+      "width": 27,
+      "height": 0.74,
+      "fit": "cover"
+    },
+    {
+      "kind": "image",
+      "src": "",
+      "alt": "",
+      "width": 40,
+      "height": 0.74,
+      "fit": "cover"
+    }
+  ],
   "aboutLayout": {
     "textSize": 9.4,
     "mobileTextSize": 9.2,
@@ -183,14 +176,6 @@
       1.12
     ]
   },
-  "transition": {
-    "strength": 1,
-    "chroma": 1,
-    "length": 1.5,
-    "rotation": 1,
-    "backgroundSpeed": 18,
-    "edgeSoftness": 32
-  },
   "theme": {
     "accent": "#c8ec01",
     "background": "#10110f",
@@ -199,6 +184,68 @@
     "panelOpacity": 0.82,
     "navSize": 16,
     "logoScale": 1,
+    "cardWidth": 170,
+    "cardGap": 70,
     "coverTextSize": 18
-  }
+  },
+  "transition": {
+    "strength": 1,
+    "chroma": 1,
+    "length": 1.5,
+    "rotation": 1,
+    "backgroundSpeed": 18,
+    "edgeSoftness": 32
+  },
+  "social": {
+    "telegram": "",
+    "instagram": "",
+    "email": "hello@mediakruzhok.example"
+  },
+  "cv": [],
+  "pageSize": 12,
+  "publicURL": "https://k-media-circle.github.io/site_circle/",
+  "aboutComposition": [
+    {
+      "items": [
+        "text-0",
+        "media-0"
+      ],
+      "align": "space-between"
+    },
+    {
+      "items": [
+        "media-1",
+        "text-1"
+      ],
+      "align": "space-between"
+    },
+    {
+      "items": [
+        "text-2",
+        "text-3"
+      ],
+      "align": "space-between"
+    },
+    {
+      "items": [
+        "text-4",
+        "media-2"
+      ],
+      "align": "space-between"
+    },
+    {
+      "items": [
+        "text-5"
+      ],
+      "align": "flex-start"
+    }
+  ],
+  "aboutText": [
+    "сообщество",
+    "артистов из",
+    "сибири,",
+    "которым",
+    "интересно",
+    "медиаискусство"
+  ]
 }
