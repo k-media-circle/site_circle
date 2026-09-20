@@ -1,0 +1,204 @@
+{
+  "social": {
+    "telegram": "",
+    "instagram": "",
+    "email": "hello@mediakruzhok.example"
+  },
+  "aboutMedia": [
+    {
+      "kind": "image",
+      "src": "",
+      "alt": "",
+      "width": 34,
+      "height": 0.74,
+      "fit": "cover"
+    },
+    {
+      "kind": "image",
+      "src": "",
+      "alt": "",
+      "width": 27,
+      "height": 0.74,
+      "fit": "cover"
+    },
+    {
+      "kind": "image",
+      "src": "",
+      "alt": "",
+      "width": 40,
+      "height": 0.74,
+      "fit": "cover"
+    }
+  ],
+  "cv": [],
+  "pageSize": 12,
+  "items": [
+    {
+      "id": "demo-1",
+      "type": "project",
+      "title": "проект / 01",
+      "date": "",
+      "demo": true,
+      "cover": {
+        "kind": "image",
+        "src": "",
+        "alt": ""
+      },
+      "summary": "Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.",
+      "body": [],
+      "media": [],
+      "links": [],
+      "coverText": "проект\n01"
+    },
+    {
+      "id": "demo-2",
+      "type": "meeting",
+      "title": "встреча / 02",
+      "date": "",
+      "demo": true,
+      "cover": {
+        "kind": "image",
+        "src": "",
+        "alt": ""
+      },
+      "summary": "Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.",
+      "body": [],
+      "media": [],
+      "links": [],
+      "coverText": "встреча\n02"
+    },
+    {
+      "id": "demo-3",
+      "type": "project",
+      "title": "проект / 03",
+      "date": "",
+      "demo": true,
+      "cover": {
+        "kind": "image",
+        "src": "",
+        "alt": ""
+      },
+      "summary": "Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.",
+      "body": [],
+      "media": [],
+      "links": [],
+      "coverText": "проект\n03"
+    },
+    {
+      "id": "demo-4",
+      "type": "project",
+      "title": "проект / 04",
+      "date": "",
+      "demo": true,
+      "cover": {
+        "kind": "image",
+        "src": "",
+        "alt": ""
+      },
+      "summary": "Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.",
+      "body": [],
+      "media": [],
+      "links": [],
+      "coverText": "проект\n04"
+    },
+    {
+      "id": "demo-5",
+      "type": "meeting",
+      "title": "встреча / 05",
+      "date": "",
+      "demo": true,
+      "cover": {
+        "kind": "image",
+        "src": "",
+        "alt": ""
+      },
+      "summary": "Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.",
+      "body": [],
+      "media": [],
+      "links": [],
+      "coverText": "встреча\n05"
+    },
+    {
+      "id": "demo-6",
+      "type": "project",
+      "title": "проект / 06",
+      "date": "",
+      "demo": true,
+      "cover": {
+        "kind": "image",
+        "src": "",
+        "alt": ""
+      },
+      "summary": "Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.",
+      "body": [],
+      "media": [],
+      "links": [],
+      "coverText": "проект\n06"
+    },
+    {
+      "id": "demo-7",
+      "type": "project",
+      "title": "проект / 07",
+      "date": "",
+      "demo": true,
+      "cover": {
+        "kind": "image",
+        "src": "",
+        "alt": ""
+      },
+      "summary": "Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.",
+      "body": [],
+      "media": [],
+      "links": [],
+      "coverText": "проект\n07"
+    },
+    {
+      "id": "demo-8",
+      "type": "meeting",
+      "title": "встреча / 08",
+      "date": "",
+      "demo": true,
+      "cover": {
+        "kind": "image",
+        "src": "",
+        "alt": ""
+      },
+      "summary": "Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.",
+      "body": [],
+      "media": [],
+      "links": [],
+      "coverText": "встреча\n08"
+    }
+  ],
+  "aboutLayout": {
+    "textSize": 9.4,
+    "mobileTextSize": 9.2,
+    "weight": 600,
+    "rowGap": 0.06,
+    "rowScales": [
+      1,
+      1,
+      1,
+      1,
+      1.12
+    ]
+  },
+  "transition": {
+    "strength": 1,
+    "chroma": 1,
+    "length": 1.5,
+    "rotation": 1,
+    "backgroundSpeed": 18,
+    "edgeSoftness": 32
+  },
+  "theme": {
+    "accent": "#c8ec01",
+    "background": "#10110f",
+    "surface": "#171817",
+    "text": "#e9e9e1",
+    "panelOpacity": 0.82,
+    "navSize": 16,
+    "logoScale": 1,
+    "coverTextSize": 18
+  }
+}
