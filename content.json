@@ -201,9 +201,14 @@
     "instagram": "",
     "email": "hello@mediakruzhok.example"
   },
-  "cv": [],
-  "pageSize": 12,
-  "publicURL": "https://k-media-circle.github.io/site_circle/",
+  "aboutText": [
+    "сообщество",
+    "артистов из",
+    "сибири,",
+    "которым",
+    "интересно",
+    "медиаискусство"
+  ],
   "aboutComposition": [
     {
       "items": [
@@ -240,12 +245,7 @@
       "align": "flex-start"
     }
   ],
-  "aboutText": [
-    "сообщество",
-    "артистов из",
-    "сибири,",
-    "которым",
-    "интересно",
-    "медиаискусство"
-  ]
+  "cv": [],
+  "pageSize": 12,
+  "publicURL": "https://k-media-circle.github.io/site_circle/"
 }
