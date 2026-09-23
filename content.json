@@ -306,9 +306,9 @@
     "edgeSoftness": 42
   },
   "social": {
-    "telegram": "",
-    "instagram": "",
-    "email": "hello@mediakruzhok.example"
+    "telegram": "https://t.me/k_media_circle",
+    "instagram": "https://instagram.com/k_media_circle",
+    "email": "hello@media-circle.ru"
   },
   "aboutText": [
     "сообщество",
