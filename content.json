@@ -1,67 +1,4 @@
 {
-  "social": {
-    "telegram": "",
-    "instagram": "",
-    "email": "hello@mediakruzhok.example"
-  },
-  "mobileLayout": {
-    "textSize": 10.2,
-    "rowGap": 0.14,
-    "weight": 600,
-    "rowScales": [
-      1,
-      1,
-      1,
-      1,
-      1
-    ],
-    "rowHeights": [],
-    "rowOffsets": [],
-    "logoScale": 1,
-    "logoX": 50,
-    "logoY": 51,
-    "heroHeight": 100,
-    "patternOpacity": 1,
-    "patternScale": 1,
-    "aboutTop": 96,
-    "aboutBottom": 42,
-    "galleryHeight": 390,
-    "galleryTop": 34,
-    "galleryBottom": 44,
-    "captionSize": 30,
-    "practiceTop": 92,
-    "cardWidth": 124,
-    "cardGap": 22,
-    "cardFit": "cover"
-  },
-  "aboutMedia": [
-    {
-      "kind": "image",
-      "src": "",
-      "alt": "",
-      "width": 34,
-      "height": 0.74,
-      "fit": "cover"
-    },
-    {
-      "kind": "image",
-      "src": "",
-      "alt": "",
-      "width": 27,
-      "height": 0.74,
-      "fit": "cover"
-    },
-    {
-      "kind": "image",
-      "src": "",
-      "alt": "",
-      "width": 40,
-      "height": 0.74,
-      "fit": "cover"
-    }
-  ],
-  "cv": [],
-  "pageSize": 12,
   "items": [
     {
       "id": "demo-1",
@@ -200,6 +137,32 @@
       "coverText": "встреча\n08"
     }
   ],
+  "aboutMedia": [
+    {
+      "kind": "image",
+      "src": "",
+      "alt": "",
+      "width": 34,
+      "height": 0.74,
+      "fit": "cover"
+    },
+    {
+      "kind": "image",
+      "src": "",
+      "alt": "",
+      "width": 27,
+      "height": 0.74,
+      "fit": "cover"
+    },
+    {
+      "kind": "image",
+      "src": "",
+      "alt": "",
+      "width": 40,
+      "height": 0.74,
+      "fit": "cover"
+    }
+  ],
   "aboutLayout": {
     "textSize": 9.4,
     "mobileTextSize": 9.2,
@@ -213,15 +176,113 @@
       1.12
     ],
     "rowHeights": [],
-    "rowOffsets": []
+    "rowOffsets": [],
+    "media": [
+      {
+        "width": 34,
+        "height": 0.74,
+        "offsetY": 0,
+        "fit": "cover"
+      },
+      {
+        "width": 27,
+        "height": 0.74,
+        "offsetY": 0,
+        "fit": "cover"
+      },
+      {
+        "width": 40,
+        "height": 0.74,
+        "offsetY": 0,
+        "fit": "cover"
+      }
+    ]
   },
-  "transition": {
-    "strength": 1,
-    "chroma": 1,
-    "length": 1.5,
-    "rotation": 1,
-    "backgroundSpeed": 18,
-    "edgeSoftness": 32
+  "mobileLayout": {
+    "textSize": 10.2,
+    "rowGap": 0.14,
+    "weight": 600,
+    "rowScales": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "rowHeights": [],
+    "rowOffsets": [],
+    "logoScale": 1,
+    "logoX": 50,
+    "logoY": 51,
+    "heroHeight": 100,
+    "patternOpacity": 1,
+    "patternScale": 1,
+    "aboutTop": 96,
+    "aboutBottom": 42,
+    "galleryHeight": 390,
+    "galleryTop": 34,
+    "galleryBottom": 44,
+    "captionSize": 30,
+    "practiceTop": 92,
+    "cardWidth": 124,
+    "cardGap": 22,
+    "cardFit": "cover",
+    "composition": [
+      {
+        "items": [
+          "text-0",
+          "media-0"
+        ],
+        "align": "space-between"
+      },
+      {
+        "items": [
+          "media-1",
+          "text-1"
+        ],
+        "align": "space-between"
+      },
+      {
+        "items": [
+          "text-2",
+          "text-3"
+        ],
+        "align": "space-between"
+      },
+      {
+        "items": [
+          "text-4",
+          "media-2"
+        ],
+        "align": "space-between"
+      },
+      {
+        "items": [
+          "text-5"
+        ],
+        "align": "flex-start"
+      }
+    ],
+    "media": [
+      {
+        "width": 34,
+        "height": 0.74,
+        "offsetY": 0,
+        "fit": "cover"
+      },
+      {
+        "width": 27,
+        "height": 0.74,
+        "offsetY": 0,
+        "fit": "cover"
+      },
+      {
+        "width": 40,
+        "height": 0.74,
+        "offsetY": 0,
+        "fit": "cover"
+      }
+    ]
   },
   "theme": {
     "accent": "#c8ec01",
@@ -233,7 +294,69 @@
     "logoScale": 1,
     "logoX": 50,
     "logoY": 54,
+    "cardWidth": 170,
+    "cardGap": 70,
     "coverTextSize": 18,
     "cardFit": "cover"
-  }
+  },
+  "transition": {
+    "strength": 1,
+    "chroma": 1,
+    "length": 1.5,
+    "rotation": 1,
+    "backgroundSpeed": 18,
+    "edgeSoftness": 32
+  },
+  "social": {
+    "telegram": "",
+    "instagram": "",
+    "email": "hello@mediakruzhok.example"
+  },
+  "cv": [],
+  "pageSize": 12,
+  "publicURL": "https://k-media-circle.github.io/site_circle/",
+  "aboutComposition": [
+    {
+      "items": [
+        "text-0",
+        "media-0"
+      ],
+      "align": "space-between"
+    },
+    {
+      "items": [
+        "media-1",
+        "text-1"
+      ],
+      "align": "space-between"
+    },
+    {
+      "items": [
+        "text-2",
+        "text-3"
+      ],
+      "align": "space-between"
+    },
+    {
+      "items": [
+        "text-4",
+        "media-2"
+      ],
+      "align": "space-between"
+    },
+    {
+      "items": [
+        "text-5"
+      ],
+      "align": "flex-start"
+    }
+  ],
+  "aboutText": [
+    "сообщество",
+    "артистов из",
+    "сибири,",
+    "которым",
+    "интересно",
+    "медиаискусство"
+  ]
 }
