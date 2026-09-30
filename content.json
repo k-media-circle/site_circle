@@ -175,8 +175,12 @@
       1,
       1.12
     ],
-    "rowHeights": [],
-    "rowOffsets": [],
+    "rowHeights": [
+      0
+    ],
+    "rowOffsets": [
+      -6
+    ],
     "media": [
       {
         "width": 34,
@@ -308,8 +312,8 @@
     "edgeSoftness": 32
   },
   "social": {
-    "telegram": "",
-    "instagram": "",
+    "telegram": "https://t.me/k_media_circle",
+    "instagram": "instagram.com/k_media_circle",
     "email": "hello@mediakruzhok.example"
   },
   "aboutText": [
