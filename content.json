@@ -200,9 +200,18 @@
         "offsetY": 0,
         "fit": "cover"
       }
-    ]
+    ],
+    "textStyles": {
+      "text-0": {},
+      "text-1": {},
+      "text-2": {},
+      "text-3": {},
+      "text-4": {},
+      "text-5": {}
+    }
   },
   "mobileLayout": {
+    "navSize": 14,
     "textSize": 10.2,
     "rowGap": 0.14,
     "weight": 600,
@@ -237,34 +246,39 @@
           "text-0",
           "media-0"
         ],
-        "align": "space-between"
+        "align": "space-between",
+        "gap": 0
       },
       {
         "items": [
           "media-1",
           "text-1"
         ],
-        "align": "space-between"
+        "align": "space-between",
+        "gap": 0
       },
       {
         "items": [
           "text-2",
           "text-3"
         ],
-        "align": "space-between"
+        "align": "space-between",
+        "gap": 0
       },
       {
         "items": [
           "text-4",
           "media-2"
         ],
-        "align": "space-between"
+        "align": "space-between",
+        "gap": 0
       },
       {
         "items": [
           "text-5"
         ],
-        "align": "flex-start"
+        "align": "flex-start",
+        "gap": 0
       }
     ],
     "media": [
@@ -286,7 +300,15 @@
         "offsetY": 0,
         "fit": "cover"
       }
-    ]
+    ],
+    "textStyles": {
+      "text-0": {},
+      "text-1": {},
+      "text-2": {},
+      "text-3": {},
+      "text-4": {},
+      "text-5": {}
+    }
   },
   "theme": {
     "accent": "#c8ec01",
@@ -362,5 +384,36 @@
   ],
   "cv": [],
   "pageSize": 12,
-  "publicURL": "https://k-media-circle.github.io/site_circle/"
+  "publicURL": "https://k-media-circle.github.io/site_circle/",
+  "typography": {
+    "global": {
+      "font": "Onest",
+      "letterSpacing": 0.01
+    },
+    "desktop": {
+      "elements": {
+        "menu": {},
+        "about": {},
+        "actions": {},
+        "cover": {},
+        "caption": {},
+        "panelTitle": {},
+        "panelText": {},
+        "contact": {}
+      }
+    },
+    "mobile": {
+      "elements": {
+        "menu": {},
+        "about": {},
+        "actions": {},
+        "cover": {},
+        "caption": {},
+        "panelTitle": {},
+        "panelText": {},
+        "contact": {}
+      }
+    }
+  },
+  "categories": []
 }
