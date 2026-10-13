@@ -186,20 +186,25 @@
         "width": 34,
         "height": 0.74,
         "offsetY": 0,
-        "fit": "cover"
+        "fit": "cover",
+        "elastic": false,
+        "cropX": 50,
+        "cropY": 50
       },
       {
         "width": 27,
         "height": 0.74,
         "offsetY": 0,
         "fit": "cover",
-        "cropX": 100
+        "cropX": 100,
+        "elastic": false
       },
       {
         "width": 40,
         "height": 0.74,
         "offsetY": 0,
-        "fit": "cover"
+        "fit": "cover",
+        "elastic": false
       }
     ],
     "textStyles": {
@@ -212,7 +217,46 @@
       "text-4": {},
       "text-5": {}
     },
-    "layoutMode": "manual"
+    "layoutMode": "manual",
+    "gridColumns": 24,
+    "gridCells": {
+      "text-0": {
+        "col": 1,
+        "span": 14
+      },
+      "media-0": {
+        "col": 16,
+        "span": 9
+      },
+      "media-1": {
+        "col": 1,
+        "span": 9
+      },
+      "text-1": {
+        "col": 11,
+        "span": 14
+      },
+      "text-2": {
+        "col": 1,
+        "span": 9
+      },
+      "text-3": {
+        "col": 15,
+        "span": 10
+      },
+      "text-4": {
+        "col": 1,
+        "span": 12
+      },
+      "media-2": {
+        "col": 14,
+        "span": 11
+      },
+      "text-5": {
+        "col": 1,
+        "span": 21
+      }
+    }
   },
   "mobileLayout": {
     "navSize": 14,
@@ -389,11 +433,14 @@
       ],
       "align": "flex-start",
       "gap": 0
+    },
+    {
+      "items": [],
+      "align": "flex-start",
+      "gap": 0
     }
   ],
-  "cv": [],
-  "pageSize": 12,
-  "publicURL": "https://k-media-circle.github.io/site_circle/",
+  "categories": [],
   "typography": {
     "global": {
       "font": "Onest",
@@ -424,5 +471,7 @@
       }
     }
   },
-  "categories": []
+  "cv": [],
+  "pageSize": 12,
+  "publicURL": "https://k-media-circle.github.io/site_circle/"
 }
