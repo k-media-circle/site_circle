@@ -307,7 +307,7 @@ body,input,select,textarea,button,.archive-note,.caption-meta,.archive-bottom,.p
               <span class="type-row"><span>интересно</span><span class="media-slot" data-slot="2" aria-hidden="true"></span></span>
               <span class="type-row"><span>медиаискусство</span></span>
             </h2>
-            <div class="about-actions"><button type="button" class="text-link" data-panel="about">подробнее</button><button type="button" class="text-link" data-panel="cv">cv</button></div>
+            <div class="about-actions"><button type="button" class="text-link" data-panel="cv">cv</button></div>
           </div>
         </section>
       </div>
@@ -1059,7 +1059,7 @@ body,input,select,textarea,button,.archive-note,.caption-meta,.archive-bottom,.p
     if(hash.startsWith('#project=')){
       try{item=allItems.find(item=>item.id===decodeURIComponent(hash.slice(9)))}catch{}
       kind='project';
-    }else if(hash==='#about-details')kind='about';else if(hash==='#cv')kind='cv';
+    }else if(hash==='#cv')kind='cv';
     if(!kind){
       if(dialog.open)dialog.close();activeRoute='';
       if(Number.isFinite(history.state?.mediaReturnY))window.scrollTo({top:history.state.mediaReturnY,behavior:'instant'});
