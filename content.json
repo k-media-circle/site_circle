@@ -525,7 +525,7 @@
     "background": "#191919",
     "surface": "#171817",
     "text": "#e9e9e1",
-    "panelOpacity": 0.82,
+    "panelOpacity": 0.64,
     "navSize": 16,
     "logoScale": 1,
     "logoX": 50,
@@ -533,7 +533,8 @@
     "cardWidth": 170,
     "cardGap": 70,
     "coverTextSize": 18,
-    "cardFit": "cover"
+    "cardFit": "cover",
+    "panelDesignVersion": 2
   },
   "transition": {
     "strength": 0.75,
@@ -547,7 +548,8 @@
   "social": {
     "telegram": "https://t.me/k_media_circle",
     "instagram": "instagram.com/k_media_circle",
-    "email": "hello@mediakruzhok.example"
+    "email": "hello@media-circle.ru",
+    "contactDesignVersion": 1
   },
   "aboutText": [
     "сообщество",
@@ -708,7 +710,7 @@
         "panelText": {},
         "contact": {
           "fontWeight": 700,
-          "fontSize": 60
+          "fontSize": 80
         }
       }
     },
@@ -721,7 +723,9 @@
         "caption": {},
         "panelTitle": {},
         "panelText": {},
-        "contact": {}
+        "contact": {
+          "fontSize": 28
+        }
       }
     }
   },
