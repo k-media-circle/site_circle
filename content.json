@@ -310,8 +310,8 @@
         "span": 42
       },
       "media-1": {
-        "col": 35,
-        "span": 23
+        "col": 38,
+        "span": 20
       },
       "text-1": {
         "col": 18,
@@ -599,11 +599,6 @@
         "text-5",
         "media-5"
       ],
-      "align": "flex-start",
-      "gap": 0
-    },
-    {
-      "items": [],
       "align": "flex-start",
       "gap": 0
     }
