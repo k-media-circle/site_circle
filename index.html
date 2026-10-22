@@ -328,6 +328,13 @@ body,input,select,textarea,button,.archive-note,.caption-meta,.archive-bottom,.p
 .studio-panel .studio-editable ul,.studio-panel .studio-editable ol{padding-left:1.4em}.studio-panel .studio-editable li{margin-bottom:.8em}
 
 .studio-panel .studio-block-body{--doc-opacity:1}
+
+/* A shared baseline and matching text controls in every document header. */
+.panel-bar,.studio-panel .panel-bar{height:68px;padding:12px 32px;gap:24px;align-items:center;font:400 12px/1.2 var(--site-font,Arial),sans-serif}
+.panel-bar .panel-kicker,.panel-bar .panel-share,.panel-bar .panel-close{display:inline-flex;align-items:center;justify-content:center;height:44px;min-height:44px;width:auto;flex:0 0 auto;padding:0;border:0;border-radius:0;background:transparent;font:inherit;letter-spacing:0;white-space:nowrap}
+.panel-bar .panel-kicker{justify-content:flex-start;margin-right:auto}.panel-bar .panel-share{margin-left:0}.panel-bar .panel-close{outline-offset:3px}
+.studio-panel.mobile .panel-bar{height:64px;padding:10px 20px;gap:16px;font-size:11px}
+@media(max-width:600px){.panel-bar{height:64px;padding:10px 20px;gap:16px;font-size:11px}}
 </style>
 <style id="contact-logo-pause-500">@keyframes contact-logo-pause-500{0%{rotate:0deg}50%,100%{rotate:360deg}}</style><style id="icon-turn-231">@keyframes icon-turn-231{0%{rotate:0deg}23.076923076923077%,100%{rotate:360deg}}</style><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400&amp;display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@700&amp;display=swap"></head><body>
   <div class="site-loader" role="status" aria-label="Загрузка сайта"><svg class="site-loader-ring" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20" pathLength="100" /></svg></div>
@@ -378,7 +385,7 @@ body,input,select,textarea,button,.archive-note,.caption-meta,.archive-bottom,.p
     </section>
     <footer class="contact" id="contact" aria-label="Связь" tabindex="-1"><div class="contact-links"><a data-social="telegram" aria-disabled="true" title="Адрес канала добавим позже">telegram</a><a data-social="instagram" aria-disabled="true" title="Адрес профиля добавим позже">instagram</a><a data-social="email" href="mailto:hello@media-circle.ru">hello@media-circle.ru</a></div><div class="contact-logo" aria-hidden="true"><img class="contact-logo-image" alt=""></div></footer>
   </main>
-  <dialog class="side-panel" aria-labelledby="panel-title"><div class="panel-bar"><span class="panel-kicker"></span><button type="button" class="panel-share text-link">копировать ссылку</button><button type="button" class="panel-close text-link" aria-label="Закрыть окно">×</button></div><input class="panel-url" aria-label="Ссылка на открытое окно" readonly hidden><div class="panel-body"><h2 id="panel-title"></h2><p class="panel-meta" hidden></p><div class="panel-content"></div></div></dialog>
+  <dialog class="side-panel" aria-labelledby="panel-title"><div class="panel-bar"><span class="panel-kicker"></span><button type="button" class="panel-share text-link">копировать ссылку</button><button type="button" class="panel-close text-link" aria-label="Закрыть окно">закрыть</button></div><input class="panel-url" aria-label="Ссылка на открытое окно" readonly hidden><div class="panel-body"><h2 id="panel-title"></h2><p class="panel-meta" hidden></p><div class="panel-content"></div></div></dialog>
   <template id="about-details">
     <p class="panel-lead">Медиакружок — горизонтальная исследовательская среда для изучения современного искусства в контексте технологического развития и коллективного творческого поиска.</p>
     <h3>Основные направления деятельности</h3>
