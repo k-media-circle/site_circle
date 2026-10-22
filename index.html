@@ -369,7 +369,7 @@ body,input,select,textarea,button,.archive-note,.caption-meta,.archive-bottom,.p
               <span class="type-row"><span>интересно</span><span class="media-slot" data-slot="2" aria-hidden="true"></span></span>
               <span class="type-row"><span>медиаискусство</span></span>
             </h2>
-            <div class="about-actions"><button type="button" class="text-link" data-panel="cv">cv</button></div>
+            <div class="about-actions"><button type="button" class="text-link" data-panel="cv">cv</button><a class="text-link" data-cv-pdf hidden target="_blank" rel="noopener noreferrer">CV PDF</a></div>
           </div>
         </section>
       </div>
@@ -383,7 +383,7 @@ body,input,select,textarea,button,.archive-note,.caption-meta,.archive-bottom,.p
         <noscript>Для интерактивной галереи включите JavaScript.</noscript>
       </div>
     </section>
-    <footer class="contact" id="contact" aria-label="Связь" tabindex="-1"><div class="contact-links"><a data-social="telegram" aria-disabled="true" title="Адрес канала добавим позже">telegram</a><a data-social="instagram" aria-disabled="true" title="Адрес профиля добавим позже">instagram</a><a data-social="email" href="mailto:hello@media-circle.ru">hello@media-circle.ru</a></div><div class="contact-logo" aria-hidden="true"><img class="contact-logo-image" alt=""></div></footer>
+    <footer class="contact" id="contact" aria-label="Связь" tabindex="-1"><div class="contact-links"><a data-social="email" href="mailto:hello@media-circle.ru">hello@media-circle.ru</a><a data-social="telegram" aria-disabled="true" title="Адрес канала добавим позже">telegram</a><a data-social="instagram" aria-disabled="true" title="Адрес профиля добавим позже">instagram</a></div><div class="contact-logo" aria-hidden="true"><img class="contact-logo-image" alt=""></div></footer>
   </main>
   <dialog class="side-panel" aria-labelledby="panel-title"><div class="panel-bar"><span class="panel-kicker"></span><button type="button" class="panel-share text-link">копировать ссылку</button><button type="button" class="panel-close text-link" aria-label="Закрыть окно">закрыть</button></div><input class="panel-url" aria-label="Ссылка на открытое окно" readonly hidden><div class="panel-body"><h2 id="panel-title"></h2><p class="panel-meta" hidden></p><div class="panel-content"></div></div></dialog>
   <template id="about-details">
@@ -958,8 +958,10 @@ body,input,select,textarea,button,.archive-note,.caption-meta,.archive-bottom,.p
     const address=new URL(base);address.hash=activeRoute||location.hash;address.searchParams.delete('edit');
     address.pathname=address.pathname.replace(/mediakruzhok-editor\.html$/,'mediakruzhok-scroll.html').replace(/\/editor\.html$/,'/index.html');
     const url=address.href;
-    try{await navigator.clipboard.writeText(url);$('.panel-share').textContent='ссылка скопирована'}
-    catch{const input=$('.panel-url');input.value=url;input.hidden=false;input.focus();input.select();$('.panel-share').textContent='скопируйте адрес ниже'}
+    const control=$('.panel-share');$('.panel-url').hidden=true;control.setAttribute('aria-live','polite');
+    const copyFallback=()=>{const input=el('textarea');input.value=url;input.readOnly=true;input.tabIndex=-1;input.setAttribute('aria-hidden','true');input.style.cssText='position:fixed;left:-9999px;top:0;width:1px;height:1px;opacity:0;pointer-events:none';dialog.append(input);let copied=false;try{input.focus({preventScroll:true});input.select();input.setSelectionRange(0,url.length);copied=document.execCommand('copy');}catch{}finally{input.remove();control.focus({preventScroll:true});}return copied;};
+    let copied=false;try{if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(url);copied=true;}else copied=copyFallback();}catch{copied=copyFallback();}
+    control.textContent=copied?'ссылка скопирована':'не удалось скопировать';
   });
   $('.panel-close').addEventListener('click',closePanel);
   dialog.addEventListener('touchstart',event=>{
@@ -993,6 +995,9 @@ body,input,select,textarea,button,.archive-note,.caption-meta,.archive-bottom,.p
     },'#cv');
   }
   $$('[data-panel]').forEach(button=>button.addEventListener('click',()=>openInfo(button.dataset.panel)));
+  function updateCVPDF(){const link=$('[data-cv-pdf]');if(!link)return;const href=window.MEDIA_TOOLS.safeLink(data.social?.cvPDFURL||'',true);link.hidden=!href;if(!href){link.removeAttribute('href');link.removeAttribute('download');return;}link.href=href;if(/^data:application\/pdf;base64,/i.test(href)){link.download=data.social.cvPDFName||'media-circle-cv.pdf';link.removeAttribute('target');}else{link.removeAttribute('download');link.target='_blank';}}
+  window.addEventListener('sitesettingschange',updateCVPDF);window.addEventListener('sitecontentchange',updateCVPDF);updateCVPDF();
+
   const stripSlots=new Set();
   const stripVisibility=new IntersectionObserver(entries=>entries.forEach(({target,isIntersecting})=>target.classList.toggle('strip-visible',isIntersecting)),{threshold:.01});
   function renderAboutMedia(){
