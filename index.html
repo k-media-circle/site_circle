@@ -231,6 +231,9 @@ body,input,select,textarea,button,.archive-note,.caption-meta,.archive-bottom,.p
 
 .type-row.composition-wide-media>.media-slot.composition-line{width:100%!important}.type-row.composition-wide-media>.composition-line img{width:100%}
 
+/* Both CV actions inherit the same typography, including custom Google fonts. */
+.about-actions>.text-link{font:inherit;letter-spacing:inherit;display:inline-flex;align-items:baseline;gap:.25em;padding:12px 0}.about-actions>.text-link::after,.mobile-layout .about-actions>.text-link::after{content:"↗";font-size:1em;font-weight:400;color:var(--lime)}
+
 /* Composition follows content width instead of the outer monitor width. */
 .intro-content{width:min(100%,1200px);container-type:inline-size;margin-inline:auto;padding-inline:clamp(20px,3vw,44px)}
 .manifesto{font-size:calc(var(--about-text-size,9.4)*1cqw)}
@@ -388,7 +391,7 @@ body,input,select,textarea,button,.archive-note,.caption-meta,.archive-bottom,.p
               <span class="type-row"><span>интересно</span><span class="media-slot" data-slot="2" aria-hidden="true"></span></span>
               <span class="type-row"><span>медиаискусство</span></span>
             </h2>
-            <div class="about-actions"><button type="button" class="text-link" data-panel="cv">cv</button><a class="text-link" data-cv-pdf hidden target="_blank" rel="noopener noreferrer">скачать CV</a></div>
+            <div class="about-actions"><button type="button" class="text-link" data-panel="cv">cv</button><a class="text-link" data-cv-pdf hidden target="_blank" rel="noopener noreferrer">CV PDF</a></div>
           </div>
         </section>
       </div>
