@@ -222,14 +222,6 @@
       "width": 34,
       "height": 0.76,
       "fit": "cover"
-    },
-    {
-      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2OC43MjczMDAiIGhlaWdodD0iNjguNzI2MDAwIiB2aWV3Qm94PSI1Ny4xNTY3MDAgNzMwLjE1NzAwMCA2OC43MjczMDAgNjguNzI2MDAwIiBmaWxsPSJub25lIj48ZyBpZD0iTUMgRmluYWwgLyAwNCAvINCX0LXQu9GR0L3Ri9C5Ij4KPGcgaWQ9Ikdyb3VwXzQ4Ij4KPHBhdGggaWQ9IlZlY3Rvcl8zNCIgZD0iTTg4LjkxNjcgNzM2LjQ0Mkw5NC4xMjM1IDczMS4yMzVMMTI0LjgwNSA3NjEuOTE3TDExOS41OTggNzY3LjEyM0w4OC45MTY3IDczNi40NDJaTTExOS41OTggNzYxLjkxN0wxMjQuODA1IDc2Ny4xMjNMOTQuMTIzNSA3OTcuODA1TDg4LjkxNjcgNzkyLjU5OEwxMTkuNTk4IDc2MS45MTdaTTk0LjEyMzUgNzkyLjU5OEw4OC45MTY3IDc5Ny44MDVMNTguMjM1MSA3NjcuMTIzTDYzLjQ0MTkgNzYxLjkxN0w5NC4xMjM1IDc5Mi41OThaTTYzLjQ0MTkgNzY3LjEyM0w1OC4yMzUxIDc2MS45MTdMODguOTE2NyA3MzEuMjM1TDk0LjEyMzUgNzM2LjQ0Mkw2My40NDE5IDc2Ny4xMjNaTTg3LjgzODMgNzMzLjgzOEM4Ny44MzgzIDczMS44MDUgODkuNDg2NyA3MzAuMTU3IDkxLjUyMDEgNzMwLjE1N0M5My41NTM1IDczMC4xNTcgOTUuMjAxOSA3MzEuODA1IDk1LjIwMTkgNzMzLjgzOEM5NS4yMDE5IDczNS44NzIgOTMuNTUzNSA3MzcuNTIgOTEuNTIwMSA3MzcuNTJDODkuNDg2NyA3MzcuNTIgODcuODM4MyA3MzUuODcyIDg3LjgzODMgNzMzLjgzOFpNMTE4LjUyIDc2NC41MkMxMTguNTIgNzYyLjQ4NyAxMjAuMTY4IDc2MC44MzggMTIyLjIwMiA3NjAuODM4QzEyNC4yMzUgNzYwLjgzOCAxMjUuODg0IDc2Mi40ODcgMTI1Ljg4NCA3NjQuNTJDMTI1Ljg4NCA3NjYuNTUzIDEyNC4yMzUgNzY4LjIwMiAxMjIuMjAyIDc2OC4yMDJDMTIwLjE2OCA3NjguMjAyIDExOC41MiA3NjYuNTUzIDExOC41MiA3NjQuNTJaTTg3LjgzODMgNzk1LjIwMkM4Ny44MzgzIDc5My4xNjggODkuNDg2NyA3OTEuNTIgOTEuNTIwMSA3OTEuNTJDOTMuNTUzNSA3OTEuNTIgOTUuMjAxOSA3OTMuMTY4IDk1LjIwMTkgNzk1LjIwMkM5NS4yMDE5IDc5Ny4yMzUgOTMuNTUzNSA3OTguODgzIDkxLjUyMDEgNzk4Ljg4M0M4OS40ODY3IDc5OC44ODMgODcuODM4MyA3OTcuMjM1IDg3LjgzODMgNzk1LjIwMlpNNTcuMTU2NyA3NjQuNTJDNTcuMTU2NyA3NjIuNDg3IDU4LjgwNTEgNzYwLjgzOCA2MC44Mzg1IDc2MC44MzhDNjIuODcxOSA3NjAuODM4IDY0LjUyMDMgNzYyLjQ4NyA2NC41MjAzIDc2NC41MkM2NC41MjAzIDc2Ni41NTMgNjIuODcxOSA3NjguMjAyIDYwLjgzODUgNzY4LjIwMkM1OC44MDUxIDc2OC4yMDIgNTcuMTU2NyA3NjYuNTUzIDU3LjE1NjcgNzY0LjUyWiIgZmlsbD0iI0M4RUMwMSIgLz4KPC9nPgo8L2c+Cjwvc3ZnPgo=",
-      "name": "Ключевой кадр · Зелёный",
-      "kind": "icon",
-      "width": 8,
-      "height": 0.76,
-      "fit": "contain"
     }
   ],
   "aboutLayout": {
@@ -254,7 +246,7 @@
       {
         "width": 34,
         "height": 0.6358579881656805,
-        "offsetY": 0,
+        "offsetY": -8,
         "fit": "cover",
         "elastic": false,
         "cropX": 50,
@@ -279,12 +271,12 @@
         "width": 8,
         "height": 0.76,
         "fit": "contain",
-        "offsetY": -16,
+        "offsetY": -24,
         "cropX": 50,
         "cropY": 50,
         "zoom": 1,
         "elastic": false,
-        "iconSize": 72,
+        "iconSize": 68.5,
         "rotate": false,
         "turnDuration": 1.2,
         "turnPause": 4
@@ -293,7 +285,7 @@
         "width": 8,
         "height": 0.76,
         "fit": "contain",
-        "offsetY": -16,
+        "offsetY": -24,
         "cropX": 50,
         "cropY": 50,
         "zoom": 1,
@@ -307,7 +299,7 @@
         "width": 8,
         "height": 0.76,
         "fit": "contain",
-        "offsetY": -16,
+        "offsetY": -24,
         "cropX": 50,
         "cropY": 50,
         "zoom": 1,
@@ -344,7 +336,7 @@
         "elastic": false,
         "iconSize": 6,
         "rotate": false,
-        "lineLength": 180.6000035603841,
+        "lineLength": 116.10000228881836,
         "lineThickness": 6,
         "turnDuration": 1.2,
         "turnPause": 4
@@ -358,7 +350,7 @@
         "cropY": 50,
         "zoom": 1,
         "elastic": false,
-        "iconSize": 72,
+        "iconSize": 62,
         "rotate": true,
         "turnDuration": 1.2,
         "turnPause": 4
@@ -367,31 +359,17 @@
         "width": 34,
         "height": 0.76,
         "fit": "cover",
-        "offsetY": -16,
+        "offsetY": -24,
         "cropX": 50,
         "cropY": 50,
         "zoom": 1,
         "elastic": false
-      },
-      {
-        "width": 8,
-        "height": 0.76,
-        "fit": "contain",
-        "offsetY": -16,
-        "cropX": 50,
-        "cropY": 50,
-        "zoom": 1,
-        "elastic": false,
-        "iconSize": 72,
-        "rotate": true,
-        "turnDuration": 1.2,
-        "turnPause": 4
       }
     ],
     "textStyles": {
       "text-0": {
         "textAlign": "left",
-        "offsetY": -8
+        "offsetY": -16
       },
       "text-1": {
         "textAlign": "right",
@@ -410,7 +388,8 @@
         "offsetY": -8
       },
       "text-5": {
-        "textAlign": "right"
+        "textAlign": "right",
+        "offsetY": -8
       },
       "text-6": {
         "offsetY": -16
@@ -424,15 +403,15 @@
         "span": 53
       },
       "media-0": {
-        "col": 55,
-        "span": 42
+        "col": 56,
+        "span": 41
       },
       "media-1": {
-        "col": 72,
-        "span": 17
+        "col": 66,
+        "span": 31
       },
       "text-1": {
-        "col": 18,
+        "col": 17,
         "span": 40
       },
       "text-2": {
@@ -444,7 +423,7 @@
         "span": 38
       },
       "text-4": {
-        "col": 17,
+        "col": 11,
         "span": 46
       },
       "media-2": {
@@ -477,22 +456,19 @@
       },
       "media-7": {
         "col": 1,
-        "span": 14
+        "span": 9
       },
       "media-8": {
-        "col": 63,
-        "span": 8
+        "col": 58,
+        "span": 7
       },
       "media-9": {
         "col": 1,
         "span": 14
-      },
-      "media-10": {
-        "col": 89,
-        "span": 8
       }
     },
-    "videoHeightPx": 58
+    "videoHeightPx": 59.5,
+    "hiddenTokens": []
   },
   "mobileLayout": {
     "navSize": 14,
@@ -621,9 +597,7 @@
         "gap": 0
       },
       {
-        "items": [
-          "media-10"
-        ],
+        "items": [],
         "align": "flex-start",
         "gap": 0
       }
@@ -744,20 +718,6 @@
         "cropY": 50,
         "zoom": 1,
         "elastic": true
-      },
-      {
-        "width": 8,
-        "height": 0.76,
-        "fit": "contain",
-        "offsetY": 0,
-        "cropX": 50,
-        "cropY": 50,
-        "zoom": 1,
-        "elastic": false,
-        "iconSize": 48,
-        "rotate": true,
-        "turnDuration": 1.2,
-        "turnPause": 4
       }
     ],
     "textStyles": {
@@ -767,7 +727,8 @@
       "text-3": {},
       "text-4": {},
       "text-5": {}
-    }
+    },
+    "hiddenTokens": []
   },
   "theme": {
     "accent": "#c8ec01",
@@ -843,8 +804,7 @@
         "media-7",
         "text-4",
         "media-8",
-        "media-1",
-        "media-10"
+        "media-1"
       ],
       "align": "space-between",
       "gap": 0
