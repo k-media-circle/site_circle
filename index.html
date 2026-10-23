@@ -1338,17 +1338,24 @@ body,input,select,textarea,button,.archive-note,.caption-meta,.archive-bottom,.p
     if(layout.layoutMode==='manual'){
       const cols=bound(layout.gridColumns,4,192,96),width=row.clientWidth,ref=bound(layout.referenceWidth,100,2200,isMobileMode()?350:1100);
       if(width<=ref){row.style.gridTemplateColumns='';return;}
-      // Keep the authored grid at its reference width. Distribute only the added
-      // space: 90% to flexible media/lines, 10% to the existing empty cells.
       const tracks=Array.from({length:cols},()=>({kind:'gap',size:ref/cols}));
+      const entries=[];
       for(const token of row.children){const id=token.dataset.layoutToken,cell=layout.gridCells[id];if(!cell)continue;
-        const start=Math.max(0,Math.round(cell.col)-1),span=parseInt(token.style.gridColumnEnd.replace('span',''))||Math.round(cell.span),end=Math.min(cols,start+span),index=Number(id.slice(6)),spec=data.aboutMedia[index],cfg=mediaConfig(index);
-        const flexible=id.startsWith('media-')&&(spec?.iconType==='line'||cfg.elastic!==false&&spec?.kind!=='icon');
+        const start=Math.max(0,Math.round(cell.col)-1),span=parseInt(token.style.gridColumnEnd.replace('span',''))||Math.round(cell.span),end=Math.min(cols,start+span),index=Number(id.slice(6)),spec=data.aboutMedia[index];
+        const flexible=id.startsWith('media-')&&(spec?.iconType==='line'||spec?.kind!=='icon');
         for(let j=start;j<end;j++)tracks[j].kind=flexible?'media':'fixed';
+        entries.push({token,id,start,end,flexible,spec,index});
       }
-      const media=tracks.filter(t=>t.kind==='media').length,gaps=tracks.filter(t=>t.kind==='gap').length,extra=width-ref;
-      if(!media){row.style.gridTemplateColumns=tracks.map(t=>t.size+'px').join(' ');return;}
-      row.classList.add('composition-wide-media');row.style.gridTemplateColumns=tracks.map(t=>(t.size+(t.kind==='media'?extra*(gaps?.9:1)/media:t.kind==='gap'?extra*.1/gaps:0))+'px').join(' ');return;
+      // A word's painted width is a minimum, including the actual loaded font.
+      // The saved cells may come from an older viewport without referenceWidth.
+      for(const e of entries){if(e.flexible)continue;const natural=e.id.startsWith('text-')?(e.token.querySelector('.composition-text-content')?.getBoundingClientRect().width||0)+8:bound(mediaConfig(e.index).iconSize,12,240,72);
+        const assigned=tracks.slice(e.start,e.end).reduce((sum,t)=>sum+t.size,0),extra=Math.max(0,natural-assigned);
+        for(let j=e.start;j<e.end;j++)tracks[j].size+=extra/Math.max(1,e.end-e.start);
+      }
+      const media=tracks.filter(t=>t.kind==='media').length,gaps=tracks.filter(t=>t.kind==='gap').length,total=tracks.reduce((sum,t)=>sum+t.size,0),extra=Math.max(0,width-total);
+      if(!media){row.style.gridTemplateColumns='';return;}
+      const fixed=tracks.filter(t=>t.kind!=='media').reduce((sum,t)=>sum+t.size,0),mediaBase=tracks.filter(t=>t.kind==='media').reduce((sum,t)=>sum+t.size,0),mediaScale=Math.min(1,Math.max(0,width-fixed)/mediaBase);
+      row.classList.add('composition-wide-media');row.style.gridTemplateColumns=tracks.map(t=>(t.kind==='media'?t.size*mediaScale+extra*(gaps?.9:1)/media:t.size+(t.kind==='gap'?extra*.1/gaps:0))+'px').join(' ');return;
     }
     const cols=bound(layout.gridColumns,4,192,96),width=row.clientWidth,ref=bound(layout.referenceWidth,100,2200,isMobileMode()?350:1100),scale=Math.min(1,width/ref),tracks=Array.from({length:cols},()=>({kind:'gap',size:ref/cols*scale+Math.min(32,Math.max(0,width-ref)*.035)/cols}));
     const children=Array.from(row.children);if(children.length===1&&!children[0].classList.contains('media-slot')){row.style.gridTemplateColumns='';return;}let hasVideo=false;
