@@ -188,6 +188,48 @@
       "height": 0.76,
       "fit": "contain",
       "iconRevision": "figma-final-2026-10-23"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDI0MCA2Ij48cGF0aCBmaWxsPSIjQzhFQzAxIiBkPSJNMCAwSDI0MFY2SDB6Ii8+PC9zdmc+",
+      "name": "Горизонтальная линия · Зелёный",
+      "kind": "icon",
+      "iconType": "line",
+      "width": 8,
+      "height": 0.76,
+      "fit": "contain"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDI0MCA2Ij48cGF0aCBmaWxsPSIjQzhFQzAxIiBkPSJNMCAwSDI0MFY2SDB6Ii8+PC9zdmc+",
+      "name": "Горизонтальная линия · Зелёный",
+      "kind": "icon",
+      "iconType": "line",
+      "width": 8,
+      "height": 0.76,
+      "fit": "contain"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2OC43MjczMDAiIGhlaWdodD0iNjguNzI2MDAwIiB2aWV3Qm94PSI1Ny4xNTY3MDAgNzMwLjE1NzAwMCA2OC43MjczMDAgNjguNzI2MDAwIiBmaWxsPSJub25lIj48ZyBpZD0iTUMgRmluYWwgLyAwNCAvINCX0LXQu9GR0L3Ri9C5Ij4KPGcgaWQ9Ikdyb3VwXzQ4Ij4KPHBhdGggaWQ9IlZlY3Rvcl8zNCIgZD0iTTg4LjkxNjcgNzM2LjQ0Mkw5NC4xMjM1IDczMS4yMzVMMTI0LjgwNSA3NjEuOTE3TDExOS41OTggNzY3LjEyM0w4OC45MTY3IDczNi40NDJaTTExOS41OTggNzYxLjkxN0wxMjQuODA1IDc2Ny4xMjNMOTQuMTIzNSA3OTcuODA1TDg4LjkxNjcgNzkyLjU5OEwxMTkuNTk4IDc2MS45MTdaTTk0LjEyMzUgNzkyLjU5OEw4OC45MTY3IDc5Ny44MDVMNTguMjM1MSA3NjcuMTIzTDYzLjQ0MTkgNzYxLjkxN0w5NC4xMjM1IDc5Mi41OThaTTYzLjQ0MTkgNzY3LjEyM0w1OC4yMzUxIDc2MS45MTdMODguOTE2NyA3MzEuMjM1TDk0LjEyMzUgNzM2LjQ0Mkw2My40NDE5IDc2Ny4xMjNaTTg3LjgzODMgNzMzLjgzOEM4Ny44MzgzIDczMS44MDUgODkuNDg2NyA3MzAuMTU3IDkxLjUyMDEgNzMwLjE1N0M5My41NTM1IDczMC4xNTcgOTUuMjAxOSA3MzEuODA1IDk1LjIwMTkgNzMzLjgzOEM5NS4yMDE5IDczNS44NzIgOTMuNTUzNSA3MzcuNTIgOTEuNTIwMSA3MzcuNTJDODkuNDg2NyA3MzcuNTIgODcuODM4MyA3MzUuODcyIDg3LjgzODMgNzMzLjgzOFpNMTE4LjUyIDc2NC41MkMxMTguNTIgNzYyLjQ4NyAxMjAuMTY4IDc2MC44MzggMTIyLjIwMiA3NjAuODM4QzEyNC4yMzUgNzYwLjgzOCAxMjUuODg0IDc2Mi40ODcgMTI1Ljg4NCA3NjQuNTJDMTI1Ljg4NCA3NjYuNTUzIDEyNC4yMzUgNzY4LjIwMiAxMjIuMjAyIDc2OC4yMDJDMTIwLjE2OCA3NjguMjAyIDExOC41MiA3NjYuNTUzIDExOC41MiA3NjQuNTJaTTg3LjgzODMgNzk1LjIwMkM4Ny44MzgzIDc5My4xNjggODkuNDg2NyA3OTEuNTIgOTEuNTIwMSA3OTEuNTJDOTMuNTUzNSA3OTEuNTIgOTUuMjAxOSA3OTMuMTY4IDk1LjIwMTkgNzk1LjIwMkM5NS4yMDE5IDc5Ny4yMzUgOTMuNTUzNSA3OTguODgzIDkxLjUyMDEgNzk4Ljg4M0M4OS40ODY3IDc5OC44ODMgODcuODM4MyA3OTcuMjM1IDg3LjgzODMgNzk1LjIwMlpNNTcuMTU2NyA3NjQuNTJDNTcuMTU2NyA3NjIuNDg3IDU4LjgwNTEgNzYwLjgzOCA2MC44Mzg1IDc2MC44MzhDNjIuODcxOSA3NjAuODM4IDY0LjUyMDMgNzYyLjQ4NyA2NC41MjAzIDc2NC41MkM2NC41MjAzIDc2Ni41NTMgNjIuODcxOSA3NjguMjAyIDYwLjgzODUgNzY4LjIwMkM1OC44MDUxIDc2OC4yMDIgNTcuMTU2NyA3NjYuNTUzIDU3LjE1NjcgNzY0LjUyWiIgZmlsbD0iI0M4RUMwMSIgLz4KPC9nPgo8L2c+Cjwvc3ZnPgo=",
+      "name": "Ключевой кадр · Зелёный",
+      "kind": "icon",
+      "width": 8,
+      "height": 0.76,
+      "fit": "contain"
+    },
+    {
+      "kind": "video",
+      "src": "https://k-media-circle.github.io/site_circle/media/ac708ec90bb1bed4d0ee76da20e8500ad84844a2.mp4",
+      "alt": "",
+      "width": 34,
+      "height": 0.76,
+      "fit": "cover"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2OC43MjczMDAiIGhlaWdodD0iNjguNzI2MDAwIiB2aWV3Qm94PSI1Ny4xNTY3MDAgNzMwLjE1NzAwMCA2OC43MjczMDAgNjguNzI2MDAwIiBmaWxsPSJub25lIj48ZyBpZD0iTUMgRmluYWwgLyAwNCAvINCX0LXQu9GR0L3Ri9C5Ij4KPGcgaWQ9Ikdyb3VwXzQ4Ij4KPHBhdGggaWQ9IlZlY3Rvcl8zNCIgZD0iTTg4LjkxNjcgNzM2LjQ0Mkw5NC4xMjM1IDczMS4yMzVMMTI0LjgwNSA3NjEuOTE3TDExOS41OTggNzY3LjEyM0w4OC45MTY3IDczNi40NDJaTTExOS41OTggNzYxLjkxN0wxMjQuODA1IDc2Ny4xMjNMOTQuMTIzNSA3OTcuODA1TDg4LjkxNjcgNzkyLjU5OEwxMTkuNTk4IDc2MS45MTdaTTk0LjEyMzUgNzkyLjU5OEw4OC45MTY3IDc5Ny44MDVMNTguMjM1MSA3NjcuMTIzTDYzLjQ0MTkgNzYxLjkxN0w5NC4xMjM1IDc5Mi41OThaTTYzLjQ0MTkgNzY3LjEyM0w1OC4yMzUxIDc2MS45MTdMODguOTE2NyA3MzEuMjM1TDk0LjEyMzUgNzM2LjQ0Mkw2My40NDE5IDc2Ny4xMjNaTTg3LjgzODMgNzMzLjgzOEM4Ny44MzgzIDczMS44MDUgODkuNDg2NyA3MzAuMTU3IDkxLjUyMDEgNzMwLjE1N0M5My41NTM1IDczMC4xNTcgOTUuMjAxOSA3MzEuODA1IDk1LjIwMTkgNzMzLjgzOEM5NS4yMDE5IDczNS44NzIgOTMuNTUzNSA3MzcuNTIgOTEuNTIwMSA3MzcuNTJDODkuNDg2NyA3MzcuNTIgODcuODM4MyA3MzUuODcyIDg3LjgzODMgNzMzLjgzOFpNMTE4LjUyIDc2NC41MkMxMTguNTIgNzYyLjQ4NyAxMjAuMTY4IDc2MC44MzggMTIyLjIwMiA3NjAuODM4QzEyNC4yMzUgNzYwLjgzOCAxMjUuODg0IDc2Mi40ODcgMTI1Ljg4NCA3NjQuNTJDMTI1Ljg4NCA3NjYuNTUzIDEyNC4yMzUgNzY4LjIwMiAxMjIuMjAyIDc2OC4yMDJDMTIwLjE2OCA3NjguMjAyIDExOC41MiA3NjYuNTUzIDExOC41MiA3NjQuNTJaTTg3LjgzODMgNzk1LjIwMkM4Ny44MzgzIDc5My4xNjggODkuNDg2NyA3OTEuNTIgOTEuNTIwMSA3OTEuNTJDOTMuNTUzNSA3OTEuNTIgOTUuMjAxOSA3OTMuMTY4IDk1LjIwMTkgNzk1LjIwMkM5NS4yMDE5IDc5Ny4yMzUgOTMuNTUzNSA3OTguODgzIDkxLjUyMDEgNzk4Ljg4M0M4OS40ODY3IDc5OC44ODMgODcuODM4MyA3OTcuMjM1IDg3LjgzODMgNzk1LjIwMlpNNTcuMTU2NyA3NjQuNTJDNTcuMTU2NyA3NjIuNDg3IDU4LjgwNTEgNzYwLjgzOCA2MC44Mzg1IDc2MC44MzhDNjIuODcxOSA3NjAuODM4IDY0LjUyMDMgNzYyLjQ4NyA2NC41MjAzIDc2NC41MkM2NC41MjAzIDc2Ni41NTMgNjIuODcxOSA3NjguMjAyIDYwLjgzODUgNzY4LjIwMkM1OC44MDUxIDc2OC4yMDIgNTcuMTU2NyA3NjYuNTUzIDU3LjE1NjcgNzY0LjUyWiIgZmlsbD0iI0M4RUMwMSIgLz4KPC9nPgo8L2c+Cjwvc3ZnPgo=",
+      "name": "Ключевой кадр · Зелёный",
+      "kind": "icon",
+      "width": 8,
+      "height": 0.76,
+      "fit": "contain"
     }
   ],
   "aboutLayout": {
@@ -221,7 +263,7 @@
       {
         "width": 27,
         "height": 0.74,
-        "offsetY": -8,
+        "offsetY": -16,
         "fit": "cover",
         "cropX": 100,
         "elastic": false
@@ -229,7 +271,7 @@
       {
         "width": 40,
         "height": 0.74,
-        "offsetY": -16,
+        "offsetY": -8,
         "fit": "cover",
         "elastic": false
       },
@@ -265,13 +307,83 @@
         "width": 8,
         "height": 0.76,
         "fit": "contain",
-        "offsetY": -24,
+        "offsetY": -16,
         "cropX": 50,
         "cropY": 50,
         "zoom": 1,
         "elastic": false,
         "iconSize": 72,
         "rotate": false,
+        "turnDuration": 1.2,
+        "turnPause": 4
+      },
+      {
+        "width": 8,
+        "height": 0.76,
+        "fit": "contain",
+        "offsetY": -24,
+        "cropX": 50,
+        "cropY": 50,
+        "zoom": 1,
+        "elastic": false,
+        "iconSize": 6,
+        "rotate": false,
+        "lineLength": 335.4000066121419,
+        "lineThickness": 6,
+        "turnDuration": 1.2,
+        "turnPause": 4
+      },
+      {
+        "width": 8,
+        "height": 0.76,
+        "fit": "contain",
+        "offsetY": -16,
+        "cropX": 50,
+        "cropY": 50,
+        "zoom": 1,
+        "elastic": false,
+        "iconSize": 6,
+        "rotate": false,
+        "lineLength": 180.6000035603841,
+        "lineThickness": 6,
+        "turnDuration": 1.2,
+        "turnPause": 4
+      },
+      {
+        "width": 8,
+        "height": 0.76,
+        "fit": "contain",
+        "offsetY": -16,
+        "cropX": 50,
+        "cropY": 50,
+        "zoom": 1,
+        "elastic": false,
+        "iconSize": 72,
+        "rotate": true,
+        "turnDuration": 1.2,
+        "turnPause": 4
+      },
+      {
+        "width": 34,
+        "height": 0.76,
+        "fit": "cover",
+        "offsetY": -16,
+        "cropX": 50,
+        "cropY": 50,
+        "zoom": 1,
+        "elastic": false
+      },
+      {
+        "width": 8,
+        "height": 0.76,
+        "fit": "contain",
+        "offsetY": -16,
+        "cropX": 50,
+        "cropY": 50,
+        "zoom": 1,
+        "elastic": false,
+        "iconSize": 72,
+        "rotate": true,
         "turnDuration": 1.2,
         "turnPause": 4
       }
@@ -299,6 +411,9 @@
       },
       "text-5": {
         "textAlign": "right"
+      },
+      "text-6": {
+        "offsetY": -16
       }
     },
     "layoutMode": "manual",
@@ -313,8 +428,8 @@
         "span": 42
       },
       "media-1": {
-        "col": 38,
-        "span": 20
+        "col": 72,
+        "span": 17
       },
       "text-1": {
         "col": 18,
@@ -329,16 +444,16 @@
         "span": 38
       },
       "text-4": {
-        "col": 51,
+        "col": 17,
         "span": 46
       },
       "media-2": {
-        "col": 2,
-        "span": 48
+        "col": 38,
+        "span": 18
       },
       "text-5": {
-        "col": 1,
-        "span": 80
+        "col": 16,
+        "span": 73
       },
       "media-3": {
         "col": 1,
@@ -349,11 +464,35 @@
         "span": 8
       },
       "media-5": {
-        "col": 85,
+        "col": 89,
+        "span": 8
+      },
+      "media-6": {
+        "col": 59,
+        "span": 26
+      },
+      "text-6": {
+        "col": 87,
+        "span": 10
+      },
+      "media-7": {
+        "col": 1,
+        "span": 14
+      },
+      "media-8": {
+        "col": 63,
+        "span": 8
+      },
+      "media-9": {
+        "col": 1,
+        "span": 14
+      },
+      "media-10": {
+        "col": 89,
         "span": 8
       }
     },
-    "videoHeightPx": 68
+    "videoHeightPx": 58
   },
   "mobileLayout": {
     "navSize": 14,
@@ -447,7 +586,44 @@
         "gap": 0
       },
       {
-        "items": [],
+        "items": [
+          "media-6"
+        ],
+        "align": "flex-start",
+        "gap": 0
+      },
+      {
+        "items": [
+          "text-6"
+        ],
+        "align": "flex-start",
+        "gap": 0
+      },
+      {
+        "items": [
+          "media-7"
+        ],
+        "align": "flex-start",
+        "gap": 0
+      },
+      {
+        "items": [
+          "media-9"
+        ],
+        "align": "flex-start",
+        "gap": 0
+      },
+      {
+        "items": [
+          "media-8"
+        ],
+        "align": "flex-start",
+        "gap": 0
+      },
+      {
+        "items": [
+          "media-10"
+        ],
         "align": "flex-start",
         "gap": 0
       }
@@ -512,6 +688,76 @@
         "rotate": true,
         "turnDuration": 1.2,
         "turnPause": 4
+      },
+      {
+        "width": 8,
+        "height": 0.76,
+        "fit": "contain",
+        "offsetY": 0,
+        "cropX": 50,
+        "cropY": 50,
+        "zoom": 1,
+        "elastic": false,
+        "iconSize": 48,
+        "rotate": false,
+        "lineLength": 160,
+        "lineThickness": 6,
+        "turnDuration": 1.2,
+        "turnPause": 4
+      },
+      {
+        "width": 8,
+        "height": 0.76,
+        "fit": "contain",
+        "offsetY": 0,
+        "cropX": 50,
+        "cropY": 50,
+        "zoom": 1,
+        "elastic": false,
+        "iconSize": 48,
+        "rotate": false,
+        "lineLength": 160,
+        "lineThickness": 6,
+        "turnDuration": 1.2,
+        "turnPause": 4
+      },
+      {
+        "width": 8,
+        "height": 0.76,
+        "fit": "contain",
+        "offsetY": 0,
+        "cropX": 50,
+        "cropY": 50,
+        "zoom": 1,
+        "elastic": false,
+        "iconSize": 48,
+        "rotate": true,
+        "turnDuration": 1.2,
+        "turnPause": 4
+      },
+      {
+        "width": 34,
+        "height": 0.76,
+        "fit": "cover",
+        "offsetY": 0,
+        "cropX": 50,
+        "cropY": 50,
+        "zoom": 1,
+        "elastic": true
+      },
+      {
+        "width": 8,
+        "height": 0.76,
+        "fit": "contain",
+        "offsetY": 0,
+        "cropX": 50,
+        "cropY": 50,
+        "zoom": 1,
+        "elastic": false,
+        "iconSize": 48,
+        "rotate": true,
+        "turnDuration": 1.2,
+        "turnPause": 4
       }
     ],
     "textStyles": {
@@ -560,7 +806,8 @@
     "сибири,",
     "которым",
     "интересно",
-    "медиаискусство"
+    "медиаискусство",
+    "из"
   ],
   "aboutComposition": [
     {
@@ -575,7 +822,9 @@
       "items": [
         "media-3",
         "media-4",
-        "text-1"
+        "text-1",
+        "media-6",
+        "text-6"
       ],
       "align": "space-between",
       "gap": 0
@@ -583,7 +832,7 @@
     {
       "items": [
         "text-2",
-        "media-1",
+        "media-2",
         "text-3"
       ],
       "align": "space-between",
@@ -591,14 +840,18 @@
     },
     {
       "items": [
-        "media-2",
-        "text-4"
+        "media-7",
+        "text-4",
+        "media-8",
+        "media-1",
+        "media-10"
       ],
       "align": "space-between",
       "gap": 0
     },
     {
       "items": [
+        "media-9",
         "text-5",
         "media-5"
       ],
