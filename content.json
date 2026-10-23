@@ -100,7 +100,7 @@
     },
     {
       "id": "demo-5",
-      "type": "meeting",
+      "type": "project",
       "title": "dark night: генератив",
       "date": "",
       "demo": false,
@@ -121,6 +121,19 @@
           "style": {}
         }
       ]
+    },
+    {
+      "id": "project-mvkvgqws",
+      "type": "meeting",
+      "title": "какой-то инструмент",
+      "demo": false,
+      "cover": {
+        "kind": "image",
+        "src": "",
+        "alt": ""
+      },
+      "blocks": [],
+      "coverText": "инструмент"
     }
   ],
   "aboutMedia": [
