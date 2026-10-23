@@ -1336,8 +1336,7 @@ body,input,select,textarea,button,.archive-note,.caption-meta,.archive-bottom,.p
   function videoHeight(layout=activeLayout()){return bound(layout.videoHeightPx,4,400,isMobileMode()?96:72);}
   function responsiveTracks(row,layout){row.classList.remove('composition-wide-media');for(const token of row.children){token.style.removeProperty('margin-left');token.style.removeProperty('width');}if(!layout.gridCells||layout.responsive===false||document.body.classList.contains('composition-editing')){row.style.gridTemplateColumns='';return;}
     if(layout.layoutMode==='manual'){
-      const cols=bound(layout.gridColumns,4,192,96),width=row.clientWidth,ref=bound(layout.referenceWidth,100,2200,isMobileMode()?350:1100);
-      if(width<=ref){row.style.gridTemplateColumns='';return;}
+      const cols=bound(layout.gridColumns,4,192,96),width=row.clientWidth,ref=Math.min(width,bound(layout.referenceWidth,100,2200,isMobileMode()?350:1100));
       const tracks=Array.from({length:cols},()=>({kind:'gap',size:ref/cols}));
       const entries=[];
       for(const token of row.children){const id=token.dataset.layoutToken,cell=layout.gridCells[id];if(!cell)continue;
