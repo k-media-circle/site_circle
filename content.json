@@ -359,7 +359,7 @@
         "width": 34,
         "height": 0.76,
         "fit": "cover",
-        "offsetY": -24,
+        "offsetY": -16,
         "cropX": 50,
         "cropY": 50,
         "zoom": 1,
@@ -431,7 +431,7 @@
         "span": 18
       },
       "text-5": {
-        "col": 16,
+        "col": 15,
         "span": 73
       },
       "media-3": {
@@ -464,7 +464,7 @@
       },
       "media-9": {
         "col": 1,
-        "span": 14
+        "span": 13
       }
     },
     "videoHeightPx": 59.5,
