@@ -335,7 +335,7 @@
         "elastic": false,
         "iconSize": 6,
         "rotate": false,
-        "lineLength": 116.10000228881836,
+        "lineLength": 103.20555623372395,
         "lineThickness": 6,
         "turnDuration": 1.2,
         "turnPause": 4
@@ -358,7 +358,7 @@
         "width": 34,
         "height": 0.76,
         "fit": "cover",
-        "offsetY": -16,
+        "offsetY": -24,
         "cropX": 50,
         "cropY": 50,
         "zoom": 1,
@@ -426,8 +426,8 @@
         "span": 46
       },
       "media-2": {
-        "col": 38,
-        "span": 18
+        "col": 37,
+        "span": 20
       },
       "text-5": {
         "col": 15,
@@ -455,7 +455,7 @@
       },
       "media-7": {
         "col": 1,
-        "span": 9
+        "span": 8
       },
       "media-8": {
         "col": 58,
