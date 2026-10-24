@@ -101,7 +101,7 @@
     {
       "id": "project-mvkvgqws",
       "type": "meeting",
-      "title": "какой-то инструмент",
+      "title": "спектрофоник",
       "demo": false,
       "cover": {
         "kind": "image",
@@ -109,7 +109,7 @@
         "alt": ""
       },
       "blocks": [],
-      "coverText": "инструмент"
+      "coverText": "спектрофоник"
     }
   ],
   "aboutMedia": [
@@ -719,7 +719,8 @@
     "cardGap": 70,
     "coverTextSize": 18,
     "cardFit": "cover",
-    "panelDesignVersion": 2
+    "panelDesignVersion": 2,
+    "contactLogo": {}
   },
   "transition": {
     "strength": 0.75,
