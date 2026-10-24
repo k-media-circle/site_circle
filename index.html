@@ -1094,7 +1094,6 @@ body,input,select,textarea,button,.archive-note,.caption-meta,.archive-bottom,.p
   const mobileLayout=()=>matchMedia('(max-width:600px)').matches;
   function openProject(item,index){
     openPanel(item.title,item.demo?'эскиз карточки':(window.MEDIA_TOOLS.categoryLabel(item.type))+(item.date?' / '+item.date:''),container=>{
-      const visual=el('div','panel-cover');visual.append(cover(item,index));container.append(visual);
       if(Array.isArray(item.blocks)){window.MEDIA_TOOLS.renderBlocks(container,item.blocks,mediaNode);return}
       if(item.summary)container.append(el('p','panel-lead',item.summary));
       (item.body||[]).forEach(text=>container.append(el('p','',text)));
