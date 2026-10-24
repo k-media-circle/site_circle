@@ -316,20 +316,21 @@
       "fit": "contain"
     },
     {
-      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2OC43MjczMDAiIGhlaWdodD0iNjguNzI2MDAwIiB2aWV3Qm94PSI1Ny4xNTY3MDAgNzMwLjE1NzAwMCA2OC43MjczMDAgNjguNzI2MDAwIiBmaWxsPSJub25lIj48ZyBpZD0iTUMgRmluYWwgLyAwNCAvINCX0LXQu9GR0L3Ri9C5Ij4KPGcgaWQ9Ikdyb3VwXzQ4Ij4KPHBhdGggaWQ9IlZlY3Rvcl8zNCIgZD0iTTg4LjkxNjcgNzM2LjQ0Mkw5NC4xMjM1IDczMS4yMzVMMTI0LjgwNSA3NjEuOTE3TDExOS41OTggNzY3LjEyM0w4OC45MTY3IDczNi40NDJaTTExOS41OTggNzYxLjkxN0wxMjQuODA1IDc2Ny4xMjNMOTQuMTIzNSA3OTcuODA1TDg4LjkxNjcgNzkyLjU5OEwxMTkuNTk4IDc2MS45MTdaTTk0LjEyMzUgNzkyLjU5OEw4OC45MTY3IDc5Ny44MDVMNTguMjM1MSA3NjcuMTIzTDYzLjQ0MTkgNzYxLjkxN0w5NC4xMjM1IDc5Mi41OThaTTYzLjQ0MTkgNzY3LjEyM0w1OC4yMzUxIDc2MS45MTdMODguOTE2NyA3MzEuMjM1TDk0LjEyMzUgNzM2LjQ0Mkw2My40NDE5IDc2Ny4xMjNaTTg3LjgzODMgNzMzLjgzOEM4Ny44MzgzIDczMS44MDUgODkuNDg2NyA3MzAuMTU3IDkxLjUyMDEgNzMwLjE1N0M5My41NTM1IDczMC4xNTcgOTUuMjAxOSA3MzEuODA1IDk1LjIwMTkgNzMzLjgzOEM5NS4yMDE5IDczNS44NzIgOTMuNTUzNSA3MzcuNTIgOTEuNTIwMSA3MzcuNTJDODkuNDg2NyA3MzcuNTIgODcuODM4MyA3MzUuODcyIDg3LjgzODMgNzMzLjgzOFpNMTE4LjUyIDc2NC41MkMxMTguNTIgNzYyLjQ4NyAxMjAuMTY4IDc2MC44MzggMTIyLjIwMiA3NjAuODM4QzEyNC4yMzUgNzYwLjgzOCAxMjUuODg0IDc2Mi40ODcgMTI1Ljg4NCA3NjQuNTJDMTI1Ljg4NCA3NjYuNTUzIDEyNC4yMzUgNzY4LjIwMiAxMjIuMjAyIDc2OC4yMDJDMTIwLjE2OCA3NjguMjAyIDExOC41MiA3NjYuNTUzIDExOC41MiA3NjQuNTJaTTg3LjgzODMgNzk1LjIwMkM4Ny44MzgzIDc5My4xNjggODkuNDg2NyA3OTEuNTIgOTEuNTIwMSA3OTEuNTJDOTMuNTUzNSA3OTEuNTIgOTUuMjAxOSA3OTMuMTY4IDk1LjIwMTkgNzk1LjIwMkM5NS4yMDE5IDc5Ny4yMzUgOTMuNTUzNSA3OTguODgzIDkxLjUyMDEgNzk4Ljg4M0M4OS40ODY3IDc5OC44ODMgODcuODM4MyA3OTcuMjM1IDg3LjgzODMgNzk1LjIwMlpNNTcuMTU2NyA3NjQuNTJDNTcuMTU2NyA3NjIuNDg3IDU4LjgwNTEgNzYwLjgzOCA2MC44Mzg1IDc2MC44MzhDNjIuODcxOSA3NjAuODM4IDY0LjUyMDMgNzYyLjQ4NyA2NC41MjAzIDc2NC41MkM2NC41MjAzIDc2Ni41NTMgNjIuODcxOSA3NjguMjAyIDYwLjgzODUgNzY4LjIwMkM1OC44MDUxIDc2OC4yMDIgNTcuMTU2NyA3NjYuNTUzIDU3LjE1NjcgNzY0LjUyWiIgZmlsbD0iI0M4RUMwMSIgLz4KPC9nPgo8L2c+Cjwvc3ZnPgo=",
-      "name": "Ключевой кадр · Зелёный",
-      "kind": "icon",
-      "width": 8,
-      "height": 0.76,
-      "fit": "contain"
-    },
-    {
       "kind": "video",
       "src": "https://k-media-circle.github.io/site_circle/media/ac708ec90bb1bed4d0ee76da20e8500ad84844a2.mp4",
       "alt": "",
       "width": 34,
       "height": 0.76,
       "fit": "cover"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MC42ODAwMDAiIGhlaWdodD0iNTUuOTI0MDAwIiB2aWV3Qm94PSIxMTg4LjgwMDAwMCA3MzYuNTU4MDAwIDYwLjY4MDAwMCA1NS45MjQwMDAiIGZpbGw9Im5vbmUiPjxnIGlkPSJNQyBGaW5hbCAvIDA2IC8g0JfQtdC70ZHQvdGL0LkiPgo8ZyBpZD0iR3JvdXBfNTgiPgo8cGF0aCBpZD0iVmVjdG9yXzQ0IiBkPSJNMTE5Mi45NiA3NjguNjgyVjc2MC4zNThIMTI0NS4zMlY3NjguNjgySDExOTIuOTZaTTExODguOCA3NjQuNTJDMTE4OC44IDc2Mi4yMjIgMTE5MC42NiA3NjAuMzU4IDExOTIuOTYgNzYwLjM1OEMxMTk1LjI2IDc2MC4zNTggMTE5Ny4xMiA3NjIuMjIyIDExOTcuMTIgNzY0LjUyQzExOTcuMTIgNzY2LjgxOCAxMTk1LjI2IDc2OC42ODIgMTE5Mi45NiA3NjguNjgyQzExOTAuNjYgNzY4LjY4MiAxMTg4LjggNzY2LjgxOCAxMTg4LjggNzY0LjUyWk0xMjQxLjE2IDc2NC41MkMxMjQxLjE2IDc2Mi4yMjIgMTI0My4wMiA3NjAuMzU4IDEyNDUuMzIgNzYwLjM1OEMxMjQ3LjYyIDc2MC4zNTggMTI0OS40OCA3NjIuMjIyIDEyNDkuNDggNzY0LjUyQzEyNDkuNDggNzY2LjgxOCAxMjQ3LjYyIDc2OC42ODIgMTI0NS4zMiA3NjguNjgyQzEyNDMuMDIgNzY4LjY4MiAxMjQxLjE2IDc2Ni44MTggMTI0MS4xNiA3NjQuNTJaTTEyMTguNTggNzQzLjY2M0wxMjI0LjQ2IDczNy43NzdMMTI0OC4yNiA3NjEuNTc3TDEyNDIuMzggNzY3LjQ2M0wxMjE4LjU4IDc0My42NjNaTTEyNDIuMzggNzYxLjU3N0wxMjQ4LjI2IDc2Ny40NjNMMTIyNC40NiA3OTEuMjYzTDEyMTguNTggNzg1LjM3N0wxMjQyLjM4IDc2MS41NzdaTTEyMTcuMzYgNzQwLjcyQzEyMTcuMzYgNzM4LjQyMiAxMjE5LjIyIDczNi41NTggMTIyMS41MiA3MzYuNTU4QzEyMjMuODIgNzM2LjU1OCAxMjI1LjY4IDczOC40MjIgMTIyNS42OCA3NDAuNzJDMTIyNS42OCA3NDMuMDE4IDEyMjMuODIgNzQ0Ljg4MiAxMjIxLjUyIDc0NC44ODJDMTIxOS4yMiA3NDQuODgyIDEyMTcuMzYgNzQzLjAxOCAxMjE3LjM2IDc0MC43MlpNMTI0MS4xNiA3NjQuNTJDMTI0MS4xNiA3NjIuMjIyIDEyNDMuMDIgNzYwLjM1OCAxMjQ1LjMyIDc2MC4zNThDMTI0Ny42MiA3NjAuMzU4IDEyNDkuNDggNzYyLjIyMiAxMjQ5LjQ4IDc2NC41MkMxMjQ5LjQ4IDc2Ni44MTggMTI0Ny42MiA3NjguNjgyIDEyNDUuMzIgNzY4LjY4MkMxMjQzLjAyIDc2OC42ODIgMTI0MS4xNiA3NjYuODE4IDEyNDEuMTYgNzY0LjUyWk0xMjE3LjM2IDc4OC4zMkMxMjE3LjM2IDc4Ni4wMjIgMTIxOS4yMiA3ODQuMTU4IDEyMjEuNTIgNzg0LjE1OEMxMjIzLjgyIDc4NC4xNTggMTIyNS42OCA3ODYuMDIyIDEyMjUuNjggNzg4LjMyQzEyMjUuNjggNzkwLjYxOCAxMjIzLjgyIDc5Mi40ODIgMTIyMS41MiA3OTIuNDgyQzEyMTkuMjIgNzkyLjQ4MiAxMjE3LjM2IDc5MC42MTggMTIxNy4zNiA3ODguMzJaIiBmaWxsPSIjQzhFQzAxIiAvPgo8L2c+CjwvZz4KPC9zdmc+Cg==",
+      "name": "Стрелка вправо · Зелёный",
+      "kind": "icon",
+      "width": 8,
+      "height": 0.76,
+      "fit": "contain",
+      "iconRevision": "figma-final-2026-10-23"
     }
   ],
   "aboutLayout": {
@@ -428,7 +429,7 @@
         "elastic": false,
         "iconSize": 6,
         "rotate": false,
-        "lineLength": 335.4000066121419,
+        "lineLength": 232.20000457763672,
         "lineThickness": 6,
         "turnDuration": 1.2,
         "turnPause": 4
@@ -450,28 +451,28 @@
         "turnPause": 4
       },
       {
-        "width": 8,
+        "width": 34,
         "height": 0.76,
-        "fit": "contain",
+        "fit": "cover",
         "offsetY": -16,
         "cropX": 50,
         "cropY": 50,
         "zoom": 1,
-        "elastic": false,
-        "iconSize": 62,
-        "rotate": true,
-        "turnDuration": 1.2,
-        "turnPause": 4
+        "elastic": false
       },
       {
-        "width": 34,
+        "width": 8,
         "height": 0.76,
-        "fit": "cover",
+        "fit": "contain",
         "offsetY": -24,
         "cropX": 50,
         "cropY": 50,
         "zoom": 1,
-        "elastic": false
+        "elastic": false,
+        "iconSize": 68.5,
+        "rotate": true,
+        "turnDuration": 1.2,
+        "turnPause": 4
       }
     ],
     "textStyles": {
@@ -515,11 +516,11 @@
         "span": 41
       },
       "media-1": {
-        "col": 66,
-        "span": 31
+        "col": 58,
+        "span": 39
       },
       "text-1": {
-        "col": 17,
+        "col": 25,
         "span": 40
       },
       "text-2": {
@@ -555,8 +556,8 @@
         "span": 8
       },
       "media-6": {
-        "col": 59,
-        "span": 26
+        "col": 67,
+        "span": 18
       },
       "text-6": {
         "col": 87,
@@ -567,12 +568,12 @@
         "span": 8
       },
       "media-8": {
-        "col": 58,
-        "span": 7
-      },
-      "media-9": {
         "col": 1,
         "span": 13
+      },
+      "media-9": {
+        "col": 17,
+        "span": 7
       }
     },
     "videoHeightPx": 59.5,
@@ -692,14 +693,14 @@
       },
       {
         "items": [
-          "media-9"
+          "media-8"
         ],
         "align": "flex-start",
         "gap": 0
       },
       {
         "items": [
-          "media-8"
+          "media-9"
         ],
         "align": "flex-start",
         "gap": 0
@@ -804,6 +805,16 @@
         "turnPause": 4
       },
       {
+        "width": 34,
+        "height": 0.76,
+        "fit": "cover",
+        "offsetY": 0,
+        "cropX": 50,
+        "cropY": 50,
+        "zoom": 1,
+        "elastic": true
+      },
+      {
         "width": 8,
         "height": 0.76,
         "fit": "contain",
@@ -816,16 +827,6 @@
         "rotate": true,
         "turnDuration": 1.2,
         "turnPause": 4
-      },
-      {
-        "width": 34,
-        "height": 0.76,
-        "fit": "cover",
-        "offsetY": 0,
-        "cropX": 50,
-        "cropY": 50,
-        "zoom": 1,
-        "elastic": true
       }
     ],
     "textStyles": {
@@ -895,6 +896,7 @@
       "items": [
         "media-3",
         "media-4",
+        "media-9",
         "text-1",
         "media-6",
         "text-6"
@@ -915,7 +917,6 @@
       "items": [
         "media-7",
         "text-4",
-        "media-8",
         "media-1"
       ],
       "align": "space-between",
@@ -923,7 +924,7 @@
     },
     {
       "items": [
-        "media-9",
+        "media-8",
         "text-5",
         "media-5"
       ],
