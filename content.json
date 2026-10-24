@@ -408,7 +408,7 @@
         "width": 8,
         "height": 0.76,
         "fit": "contain",
-        "offsetY": -24,
+        "offsetY": -32,
         "cropX": 50,
         "cropY": 50,
         "zoom": 1,
@@ -454,7 +454,7 @@
         "width": 34,
         "height": 0.76,
         "fit": "cover",
-        "offsetY": -16,
+        "offsetY": -24,
         "cropX": 50,
         "cropY": 50,
         "zoom": 1,
@@ -498,7 +498,7 @@
       },
       "text-5": {
         "textAlign": "right",
-        "offsetY": -8
+        "offsetY": -16
       },
       "text-6": {
         "offsetY": -16
