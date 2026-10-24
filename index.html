@@ -252,6 +252,13 @@ body,input,select,textarea,button,.archive-note,.caption-meta,.archive-bottom,.p
 
 .brand-controls input.brand-volume{flex:0 0 54px;width:54px}.brand-player:fullscreen{display:flex;flex-direction:column;justify-content:center}.brand-player:fullscreen>video{flex:1;min-height:0;max-height:none;object-fit:contain}
 
+/* Uploaded cover media must paint above the positioned placeholder artwork. */
+.cover{isolation:isolate}
+.cover-art{z-index:0;pointer-events:none}
+.cover>img,.cover>video{position:absolute;inset:0;z-index:1}
+.cover.has-title::after{z-index:2}
+.cover-title,.cover-label{z-index:3}
+
 /* Composition follows content width instead of the outer monitor width. */
 .intro-content{width:min(100%,1200px);container-type:inline-size;margin-inline:auto;padding-inline:clamp(20px,3vw,44px)}
 .manifesto{font-size:calc(var(--about-text-size,9.4)*1cqw)}
