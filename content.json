@@ -158,6 +158,13 @@
           "path": "media/dbf1176beccd2c111811310aae1325984b80fc65.png",
           "filename": "vlcsnap-2026-10-23-01h33m22s736.png",
           "alt": ""
+        },
+        {
+          "kind": "text",
+          "text": "",
+          "src": "",
+          "url": "",
+          "style": {}
         }
       ],
       "slug": "livecoding"
@@ -224,7 +231,16 @@
         "src": "",
         "alt": ""
       },
-      "blocks": [],
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "Это инструмент к нашему перформансу, который пока не состоялся. Мы решили поделиться им, но сделаем это немного позже.",
+          "src": "",
+          "url": "",
+          "style": {},
+          "richHTML": "Это инструмент к <a href=\"http://media-circle.ru/#angarida\" target=\"_blank\" rel=\"noopener noreferrer\">нашему перформансу</a>, который пока не состоялся. Мы решили поделиться им, но сделаем это немного позже.<p></p>"
+        }
+      ],
       "coverText": "спектрофоник",
       "slug": "spektrofonik"
     }
