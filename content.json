@@ -8,9 +8,9 @@
       "demo": false,
       "cover": {
         "kind": "image",
-        "src": "http://media-circle.ru/media/dd418e61018435f335c536ce22cd362e00b55d78.png",
-        "path": "media/dd418e61018435f335c536ce22cd362e00b55d78.png",
-        "filename": "k960×1280.png",
+        "src": "http://media-circle.ru/media/deb2167640e7ae52cf389815bc81659188989277.png",
+        "path": "media/deb2167640e7ae52cf389815bc81659188989277.png",
+        "filename": "bl960×1280.png",
         "alt": ""
       },
       "summary": "Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.",
@@ -122,9 +122,9 @@
       "demo": false,
       "cover": {
         "kind": "image",
-        "src": "http://media-circle.ru/media/22881424d65ef0ca93e16842260ef56ac3f0ea36.png",
-        "path": "media/22881424d65ef0ca93e16842260ef56ac3f0ea36.png",
-        "filename": "live960×1280.png",
+        "src": "http://media-circle.ru/media/e02454870fbeb5079cb7cffe762e2a963a596b59.png",
+        "path": "media/e02454870fbeb5079cb7cffe762e2a963a596b59.png",
+        "filename": "prer960×1280.png",
         "alt": ""
       },
       "summary": "Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.",
@@ -196,9 +196,9 @@
       "demo": false,
       "cover": {
         "kind": "image",
-        "src": "http://media-circle.ru/media/5337cf06864248ec6d986763ced447ae63227153.png",
-        "path": "media/5337cf06864248ec6d986763ced447ae63227153.png",
-        "filename": "pt960×1280.png",
+        "src": "http://media-circle.ru/media/60003797da7b8e5090cde9020f74f04c0c076da5.png",
+        "path": "media/60003797da7b8e5090cde9020f74f04c0c076da5.png",
+        "filename": "bro960×1280.png",
         "alt": ""
       },
       "summary": "Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.",
@@ -931,7 +931,8 @@
     "coverTextSize": 18,
     "cardFit": "cover",
     "panelDesignVersion": 2,
-    "contactLogo": {}
+    "contactLogo": {},
+    "contactLayout": {}
   },
   "transition": {
     "strength": 0.75,
