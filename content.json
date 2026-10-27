@@ -8,9 +8,9 @@
       "demo": false,
       "cover": {
         "kind": "image",
-        "src": "http://media-circle.ru/media/72a70ae56705bc75d4385b4bc2416e46443661a4.png",
-        "path": "media/72a70ae56705bc75d4385b4bc2416e46443661a4.png",
-        "filename": "960×1280.png",
+        "src": "http://media-circle.ru/media/dd418e61018435f335c536ce22cd362e00b55d78.png",
+        "path": "media/dd418e61018435f335c536ce22cd362e00b55d78.png",
+        "filename": "k960×1280.png",
         "alt": ""
       },
       "summary": "Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.",
@@ -116,9 +116,9 @@
       "demo": false,
       "cover": {
         "kind": "image",
-        "src": "http://media-circle.ru/media/2797a8ef92becb7890b29a680c5ac8db361a923d.png",
-        "path": "media/2797a8ef92becb7890b29a680c5ac8db361a923d.png",
-        "filename": "perf960×1280.png",
+        "src": "http://media-circle.ru/media/22881424d65ef0ca93e16842260ef56ac3f0ea36.png",
+        "path": "media/22881424d65ef0ca93e16842260ef56ac3f0ea36.png",
+        "filename": "live960×1280.png",
         "alt": ""
       },
       "summary": "Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.",
@@ -190,9 +190,9 @@
       "demo": false,
       "cover": {
         "kind": "image",
-        "src": "http://media-circle.ru/media/a2efc8f73196a0dd649ab53c1fcec22993faa76a.png",
-        "path": "media/a2efc8f73196a0dd649ab53c1fcec22993faa76a.png",
-        "filename": "pro960×1280.png",
+        "src": "http://media-circle.ru/media/5337cf06864248ec6d986763ced447ae63227153.png",
+        "path": "media/5337cf06864248ec6d986763ced447ae63227153.png",
+        "filename": "pt960×1280.png",
         "alt": ""
       },
       "summary": "Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.",
@@ -480,7 +480,7 @@
         "elastic": false,
         "iconSize": 6,
         "rotate": false,
-        "lineLength": 232.20000457763672,
+        "lineLength": 258.000005086263,
         "lineThickness": 6,
         "turnDuration": 1.2,
         "turnPause": 4
@@ -496,7 +496,7 @@
         "elastic": false,
         "iconSize": 6,
         "rotate": false,
-        "lineLength": 103.20555623372395,
+        "lineLength": 116.10000228881836,
         "lineThickness": 6,
         "turnDuration": 1.2,
         "turnPause": 4
@@ -521,7 +521,7 @@
         "zoom": 1,
         "elastic": false,
         "iconSize": 68.5,
-        "rotate": true,
+        "rotate": false,
         "turnDuration": 1.2,
         "turnPause": 4
       }
@@ -563,8 +563,8 @@
         "span": 53
       },
       "media-0": {
-        "col": 56,
-        "span": 41
+        "col": 55,
+        "span": 42
       },
       "media-1": {
         "col": 58,
@@ -587,8 +587,8 @@
         "span": 46
       },
       "media-2": {
-        "col": 37,
-        "span": 20
+        "col": 36,
+        "span": 22
       },
       "text-5": {
         "col": 15,
@@ -599,7 +599,7 @@
         "span": 8
       },
       "media-4": {
-        "col": 9,
+        "col": 10,
         "span": 8
       },
       "media-5": {
@@ -607,8 +607,8 @@
         "span": 8
       },
       "media-6": {
-        "col": 67,
-        "span": 18
+        "col": 66,
+        "span": 20
       },
       "text-6": {
         "col": 87,
@@ -616,14 +616,14 @@
       },
       "media-7": {
         "col": 1,
-        "span": 8
+        "span": 9
       },
       "media-8": {
         "col": 1,
         "span": 13
       },
       "media-9": {
-        "col": 17,
+        "col": 18,
         "span": 7
       }
     },
