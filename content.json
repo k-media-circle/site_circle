@@ -406,24 +406,6 @@
       "height": 0.76,
       "fit": "contain",
       "iconRevision": "figma-final-2026-10-23"
-    },
-    {
-      "src": "data:image/svg+xml;base64,PHN2ZyBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDI0MCA2Ij48cGF0aCBmaWxsPSIjQzhFQzAxIiBkPSJNMCAwSDI0MFY2SDB6Ii8+PC9zdmc+",
-      "name": "Горизонтальная линия · Зелёный",
-      "kind": "icon",
-      "iconType": "line",
-      "width": 8,
-      "height": 0.76,
-      "fit": "contain"
-    },
-    {
-      "src": "data:image/svg+xml;base64,PHN2ZyBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDI0MCA2Ij48cGF0aCBmaWxsPSIjQzhFQzAxIiBkPSJNMCAwSDI0MFY2SDB6Ii8+PC9zdmc+",
-      "name": "Горизонтальная линия · Зелёный",
-      "kind": "icon",
-      "iconType": "line",
-      "width": 8,
-      "height": 0.76,
-      "fit": "contain"
     }
   ],
   "aboutLayout": {
@@ -566,38 +548,6 @@
         "rotate": false,
         "turnDuration": 1.2,
         "turnPause": 4
-      },
-      {
-        "width": 8,
-        "height": 0.76,
-        "fit": "contain",
-        "offsetY": 0,
-        "cropX": 50,
-        "cropY": 50,
-        "zoom": 1,
-        "elastic": false,
-        "iconSize": 72,
-        "rotate": false,
-        "lineLength": 240,
-        "lineThickness": 6,
-        "turnDuration": 1.2,
-        "turnPause": 4
-      },
-      {
-        "width": 8,
-        "height": 0.76,
-        "fit": "contain",
-        "offsetY": 0,
-        "cropX": 50,
-        "cropY": 50,
-        "zoom": 1,
-        "elastic": false,
-        "iconSize": 72,
-        "rotate": false,
-        "lineLength": 240,
-        "lineThickness": 6,
-        "turnDuration": 1.2,
-        "turnPause": 4
       }
     ],
     "textStyles": {
@@ -699,14 +649,6 @@
       "media-9": {
         "col": 18,
         "span": 7
-      },
-      "media-10": {
-        "col": 1,
-        "span": 21
-      },
-      "media-11": {
-        "col": 1,
-        "span": 21
       }
     },
     "videoHeightPx": 59.5,
@@ -744,9 +686,7 @@
     "cardFit": "cover",
     "composition": [
       {
-        "items": [
-          "media-10"
-        ],
+        "items": [],
         "align": "flex-start",
         "gap": 12
       },
@@ -810,7 +750,6 @@
       {
         "items": [
           "media-5",
-          "media-11",
           "media-8"
         ],
         "align": "flex-start",
@@ -941,38 +880,6 @@
         "rotate": true,
         "turnDuration": 1.2,
         "turnPause": 4
-      },
-      {
-        "width": 8,
-        "height": 0.76,
-        "fit": "contain",
-        "offsetY": 0,
-        "cropX": 50,
-        "cropY": 50,
-        "zoom": 1,
-        "elastic": false,
-        "iconSize": 48,
-        "rotate": false,
-        "lineLength": 160,
-        "lineThickness": 6,
-        "turnDuration": 1.2,
-        "turnPause": 4
-      },
-      {
-        "width": 8,
-        "height": 0.76,
-        "fit": "contain",
-        "offsetY": 0,
-        "cropX": 50,
-        "cropY": 50,
-        "zoom": 1,
-        "elastic": false,
-        "iconSize": 6,
-        "rotate": false,
-        "lineLength": 72.08333333333333,
-        "lineThickness": 6,
-        "turnDuration": 1.2,
-        "turnPause": 4
       }
     ],
     "textStyles": {
@@ -1084,14 +991,6 @@
       "media-5": {
         "col": 1,
         "span": 5
-      },
-      "media-10": {
-        "col": 1,
-        "span": 23
-      },
-      "media-11": {
-        "col": 7,
-        "span": 10
       }
     },
     "layoutMode": "manual",
@@ -1186,20 +1085,6 @@
         "media-8",
         "text-5",
         "media-5"
-      ],
-      "align": "flex-start",
-      "gap": 0
-    },
-    {
-      "items": [
-        "media-10"
-      ],
-      "align": "flex-start",
-      "gap": 0
-    },
-    {
-      "items": [
-        "media-11"
       ],
       "align": "flex-start",
       "gap": 0
