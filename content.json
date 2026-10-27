@@ -173,11 +173,11 @@
         },
         {
           "kind": "text",
-          "text": "Перформанс состоялся 29 сентября 2026 года.",
+          "text": "Перформанс состоялся 29 сентября 2026 года.Полная запись перформанса на ютуб: https://youtu.be/Qyq-U7w_qF0?si=uvmNT-egxUYYHqGJ&t=135",
           "src": "",
           "url": "",
           "style": {},
-          "richHTML": "<span>Перформанс состоялся 29 сентября 2026 года.</span><p></p>"
+          "richHTML": "<div><span>Перформанс состоялся 29 сентября 2026 года.</span></div><div><span>Полная запись перформанса на ютуб: <a href=\"https://youtu.be/Qyq-U7w_qF0?si=uvmNT-egxUYYHqGJ&amp;t=135\" target=\"_blank\" rel=\"noopener noreferrer\">https://youtu.be/Qyq-U7w_qF0?si=uvmNT-egxUYYHqGJ&amp;t=135</a></span></div><p></p>"
         }
       ],
       "slug": "livecoding"
