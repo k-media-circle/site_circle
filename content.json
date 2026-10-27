@@ -11,7 +11,13 @@
         "src": "http://media-circle.ru/media/deb2167640e7ae52cf389815bc81659188989277.png",
         "path": "media/deb2167640e7ae52cf389815bc81659188989277.png",
         "filename": "bl960×1280.png",
-        "alt": ""
+        "alt": "",
+        "preview": {
+          "source": "http://media-circle.ru/media/deb2167640e7ae52cf389815bc81659188989277.png",
+          "src": "http://media-circle.ru/media/6e0c0bc66efc9aa837a0f9b68c42c722202f3779.webp",
+          "width": 960,
+          "height": 1280
+        }
       },
       "summary": "Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.",
       "body": [],
@@ -125,7 +131,13 @@
         "src": "http://media-circle.ru/media/e02454870fbeb5079cb7cffe762e2a963a596b59.png",
         "path": "media/e02454870fbeb5079cb7cffe762e2a963a596b59.png",
         "filename": "prer960×1280.png",
-        "alt": ""
+        "alt": "",
+        "preview": {
+          "source": "http://media-circle.ru/media/e02454870fbeb5079cb7cffe762e2a963a596b59.png",
+          "src": "http://media-circle.ru/media/d9dc255532066ca09461c0b3ee4aa1b29444d4a7.webp",
+          "width": 960,
+          "height": 1280
+        }
       },
       "summary": "Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.",
       "body": [],
@@ -199,7 +211,13 @@
         "src": "http://media-circle.ru/media/60003797da7b8e5090cde9020f74f04c0c076da5.png",
         "path": "media/60003797da7b8e5090cde9020f74f04c0c076da5.png",
         "filename": "bro960×1280.png",
-        "alt": ""
+        "alt": "",
+        "preview": {
+          "source": "http://media-circle.ru/media/60003797da7b8e5090cde9020f74f04c0c076da5.png",
+          "src": "http://media-circle.ru/media/728353f4b9f93ba509f64564e077f0231c9d12d5.webp",
+          "width": 960,
+          "height": 1280
+        }
       },
       "summary": "Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.",
       "body": [],
