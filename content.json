@@ -656,7 +656,7 @@
   },
   "mobileLayout": {
     "navSize": 14,
-    "textSize": 10.2,
+    "textSize": 10.6,
     "rowGap": 0.14,
     "weight": 600,
     "rowScales": [
@@ -690,120 +690,96 @@
           "text-0",
           "media-0"
         ],
-        "align": "space-between",
-        "gap": 0
+        "align": "flex-start",
+        "gap": 12,
+        "icons": false
+      },
+      {
+        "items": [
+          "media-3",
+          "media-4",
+          "media-9",
+          "text-1"
+        ],
+        "align": "flex-start",
+        "gap": 12,
+        "icons": false
+      },
+      {
+        "items": [
+          "text-6",
+          "media-6",
+          "text-2"
+        ],
+        "align": "flex-start",
+        "gap": 12,
+        "icons": true
+      },
+      {
+        "items": [
+          "media-2"
+        ],
+        "align": "flex-start",
+        "gap": 12,
+        "icons": false
+      },
+      {
+        "items": [
+          "text-3",
+          "media-7"
+        ],
+        "align": "flex-start",
+        "gap": 12,
+        "icons": false
       },
       {
         "items": [
           "media-1",
-          "text-1"
+          "text-4"
         ],
-        "align": "space-between",
-        "gap": 0
-      },
-      {
-        "items": [
-          "text-2",
-          "text-3"
-        ],
-        "align": "space-between",
-        "gap": 0
-      },
-      {
-        "items": [
-          "text-4",
-          "media-2"
-        ],
-        "align": "space-between",
-        "gap": 0
+        "align": "flex-start",
+        "gap": 12,
+        "icons": false
       },
       {
         "items": [
           "text-5"
         ],
         "align": "flex-start",
-        "gap": 0
+        "gap": 12,
+        "icons": false
       },
       {
         "items": [
-          "media-3"
-        ],
-        "align": "flex-start",
-        "gap": 0
-      },
-      {
-        "items": [
-          "media-4"
-        ],
-        "align": "flex-start",
-        "gap": 0
-      },
-      {
-        "items": [
-          "media-5"
-        ],
-        "align": "flex-start",
-        "gap": 0
-      },
-      {
-        "items": [
-          "media-6"
-        ],
-        "align": "flex-start",
-        "gap": 0
-      },
-      {
-        "items": [
-          "text-6"
-        ],
-        "align": "flex-start",
-        "gap": 0
-      },
-      {
-        "items": [
-          "media-7"
-        ],
-        "align": "flex-start",
-        "gap": 0
-      },
-      {
-        "items": [
+          "media-5",
           "media-8"
         ],
         "align": "flex-start",
-        "gap": 0
-      },
-      {
-        "items": [
-          "media-9"
-        ],
-        "align": "flex-start",
-        "gap": 0
-      },
-      {
-        "items": [],
-        "align": "flex-start",
-        "gap": 0
+        "gap": 12,
+        "icons": false
       }
     ],
     "media": [
       {
         "width": 34,
-        "height": 0.74,
+        "height": 2.8,
         "offsetY": 0,
-        "fit": "cover"
+        "fit": "cover",
+        "elastic": false
       },
       {
         "width": 27,
-        "height": 0.74,
-        "offsetY": 0,
-        "fit": "cover"
+        "height": 2.8,
+        "offsetY": -8,
+        "fit": "cover",
+        "elastic": false
       },
       {
         "width": 40,
-        "height": 0.74,
+        "height": 2.8,
         "offsetY": 0,
-        "fit": "cover"
+        "fit": "cover",
+        "elastic": false
       },
       {
         "width": 8,
@@ -814,7 +790,7 @@
         "cropY": 50,
         "zoom": 1,
         "elastic": false,
-        "iconSize": 48,
+        "iconSize": 33,
         "rotate": true,
         "turnDuration": 1.2,
         "turnPause": 4
@@ -828,66 +804,66 @@
         "cropY": 50,
         "zoom": 1,
         "elastic": false,
-        "iconSize": 48,
+        "iconSize": 31,
         "rotate": true,
         "turnDuration": 1.2,
         "turnPause": 4
       },
       {
         "width": 8,
-        "height": 0.76,
+        "height": 2.8,
         "fit": "contain",
         "offsetY": 0,
         "cropX": 50,
         "cropY": 50,
         "zoom": 1,
         "elastic": false,
-        "iconSize": 48,
+        "iconSize": 29,
         "rotate": true,
         "turnDuration": 1.2,
         "turnPause": 4
       },
       {
         "width": 8,
-        "height": 0.76,
+        "height": 2.8,
         "fit": "contain",
         "offsetY": 0,
         "cropX": 50,
         "cropY": 50,
         "zoom": 1,
         "elastic": false,
-        "iconSize": 48,
+        "iconSize": 6,
         "rotate": false,
-        "lineLength": 160,
+        "lineLength": 122.54166666666666,
         "lineThickness": 6,
         "turnDuration": 1.2,
         "turnPause": 4
       },
       {
         "width": 8,
-        "height": 0.76,
+        "height": 2.8,
         "fit": "contain",
-        "offsetY": 0,
+        "offsetY": -8,
         "cropX": 50,
         "cropY": 50,
         "zoom": 1,
         "elastic": false,
-        "iconSize": 48,
+        "iconSize": 6,
         "rotate": false,
-        "lineLength": 160,
+        "lineLength": 158.58333333333331,
         "lineThickness": 6,
         "turnDuration": 1.2,
         "turnPause": 4
       },
       {
         "width": 34,
-        "height": 0.76,
+        "height": 2.8,
         "fit": "cover",
         "offsetY": 0,
         "cropX": 50,
         "cropY": 50,
         "zoom": 1,
-        "elastic": true
+        "elastic": false
       },
       {
         "width": 8,
@@ -898,7 +874,7 @@
         "cropY": 50,
         "zoom": 1,
         "elastic": false,
-        "iconSize": 48,
+        "iconSize": 30,
         "rotate": true,
         "turnDuration": 1.2,
         "turnPause": 4
@@ -908,8 +884,12 @@
       "text-0": {},
       "text-1": {},
       "text-2": {},
-      "text-3": {},
-      "text-4": {},
+      "text-3": {
+        "offsetY": -8
+      },
+      "text-4": {
+        "offsetY": 0
+      },
       "text-5": {},
       "text-6": {}
     },
@@ -932,7 +912,81 @@
     },
     "contactLogo": {
       "size": 162.5
-    }
+    },
+    "gridColumns": 48,
+    "referenceWidth": 346,
+    "gridCells": {
+      "text-0": {
+        "col": 1,
+        "span": 34
+      },
+      "media-0": {
+        "col": 36,
+        "span": 13
+      },
+      "media-3": {
+        "col": 1,
+        "span": 4
+      },
+      "media-4": {
+        "col": 9,
+        "span": 5
+      },
+      "media-9": {
+        "col": 17,
+        "span": 4
+      },
+      "text-1": {
+        "col": 23,
+        "span": 26
+      },
+      "media-6": {
+        "col": 8,
+        "span": 17
+      },
+      "text-6": {
+        "col": 1,
+        "span": 6
+      },
+      "text-2": {
+        "col": 27,
+        "span": 22
+      },
+      "media-2": {
+        "col": 1,
+        "span": 48
+      },
+      "text-3": {
+        "col": 1,
+        "span": 24
+      },
+      "media-7": {
+        "col": 27,
+        "span": 22
+      },
+      "text-4": {
+        "col": 18,
+        "span": 31
+      },
+      "media-1": {
+        "col": 1,
+        "span": 16
+      },
+      "media-8": {
+        "col": 19,
+        "span": 30
+      },
+      "text-5": {
+        "col": 1,
+        "span": 48
+      },
+      "media-5": {
+        "col": 1,
+        "span": 5
+      }
+    },
+    "layoutMode": "manual",
+    "videoHeightPx": 28
   },
   "theme": {
     "accent": "#c8ec01",
