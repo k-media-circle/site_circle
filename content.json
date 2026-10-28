@@ -406,6 +406,15 @@
       "height": 0.76,
       "fit": "contain",
       "iconRevision": "figma-final-2026-10-23"
+    },
+    {
+      "kind": "icon",
+      "iconType": "line",
+      "name": "Полоса · только телефон",
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNjAgNiIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+PHBhdGggZmlsbD0iI2M4ZWMwMSIgZD0iTTAgMGgxNjB2NkgweiIvPjwvc3ZnPg==",
+      "width": 8,
+      "height": 0.76,
+      "fit": "contain"
     }
   ],
   "aboutLayout": {
@@ -548,6 +557,22 @@
         "rotate": false,
         "turnDuration": 1.2,
         "turnPause": 4
+      },
+      {
+        "width": 8,
+        "height": 0.76,
+        "fit": "contain",
+        "offsetY": 0,
+        "cropX": 50,
+        "cropY": 50,
+        "zoom": 1,
+        "elastic": false,
+        "iconSize": 72,
+        "rotate": false,
+        "lineLength": 240,
+        "lineThickness": 6,
+        "turnDuration": 1.2,
+        "turnPause": 4
       }
     ],
     "textStyles": {
@@ -652,7 +677,9 @@
       }
     },
     "videoHeightPx": 59.5,
-    "hiddenTokens": []
+    "hiddenTokens": [
+      "media-10"
+    ]
   },
   "mobileLayout": {
     "navSize": 14,
@@ -750,6 +777,7 @@
       {
         "items": [
           "media-5",
+          "media-10",
           "media-8"
         ],
         "align": "flex-start",
@@ -836,7 +864,7 @@
         "elastic": false,
         "iconSize": 6,
         "rotate": false,
-        "lineLength": 122.54166666666666,
+        "lineLength": 129.75,
         "lineThickness": 6,
         "turnDuration": 1.2,
         "turnPause": 4
@@ -880,6 +908,22 @@
         "rotate": true,
         "turnDuration": 1.2,
         "turnPause": 4
+      },
+      {
+        "width": 8,
+        "height": 0.76,
+        "fit": "contain",
+        "offsetY": 0,
+        "cropX": 50,
+        "cropY": 50,
+        "zoom": 1,
+        "elastic": false,
+        "iconSize": 6,
+        "rotate": false,
+        "lineLength": 57.666666666666664,
+        "lineThickness": 6,
+        "turnDuration": 1.2,
+        "turnPause": 4
       }
     ],
     "textStyles": {
@@ -896,7 +940,9 @@
       "text-4": {
         "offsetY": -8
       },
-      "text-5": {},
+      "text-5": {
+        "offsetY": 0
+      },
       "text-6": {
         "offsetY": -8
       }
@@ -950,7 +996,7 @@
       },
       "media-6": {
         "col": 8,
-        "span": 17
+        "span": 18
       },
       "text-6": {
         "col": 1,
@@ -991,6 +1037,10 @@
       "media-5": {
         "col": 1,
         "span": 5
+      },
+      "media-10": {
+        "col": 8,
+        "span": 8
       }
     },
     "layoutMode": "manual",
@@ -1084,7 +1134,8 @@
       "items": [
         "media-8",
         "text-5",
-        "media-5"
+        "media-5",
+        "media-10"
       ],
       "align": "flex-start",
       "gap": 0
