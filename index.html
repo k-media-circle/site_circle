@@ -934,7 +934,7 @@ body,input,select,textarea,button,.archive-note,.caption-meta,.archive-bottom,.p
   `;
 
   async function makeRenderer(textureSource){
-    const gl=canvas.getContext('webgl',{alpha:true,premultipliedAlpha:false,antialias:false,powerPreference:'low-power'});
+    const gl=canvas.getContext('webgl',{alpha:true,premultipliedAlpha:false,antialias:false,preserveDrawingBuffer:true,powerPreference:'low-power'});
     if(!gl) return null;
     const parallel=gl.getExtension('KHR_parallel_shader_compile');
     function compile(type,source){
