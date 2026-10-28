@@ -1081,7 +1081,7 @@ body,input,select,textarea,button,.archive-note,.caption-meta,.archive-bottom,.p
     canvas.dataset.renderer=renderer?'webgl':'fallback';
     root.classList.toggle('webgl-ready',!!renderer);
     measure();
-    if(location.hash)navigate(location.hash.slice(1),false,true);
+    if(location.hash&&performance.getEntriesByType('navigation')[0]?.type!=='reload')navigate(location.hash.slice(1),false,true);
     paint();
     window.dispatchEvent(new Event('hero-ready'));
     requestFrame();
@@ -1393,7 +1393,7 @@ body,input,select,textarea,button,.archive-note,.caption-meta,.archive-bottom,.p
       title.textContent=value;label.hidden=!value;node.classList.toggle('has-title',!!value);
     });
   });
-  function routePanel(forcePosition=false){
+  function routePanel(forcePosition=false,restoreReturn=false){
     closePending=false;
     const hash=location.hash;
     let item=null,kind=null;
@@ -1401,7 +1401,7 @@ body,input,select,textarea,button,.archive-note,.caption-meta,.archive-bottom,.p
     if(item||hash.startsWith('#project='))kind='project';else if(hash==='#cv')kind='cv';
     if(!kind){
       if(dialog.open)dialog.close();activeRoute='';
-      if(Number.isFinite(history.state?.mediaReturnY))window.scrollTo({top:history.state.mediaReturnY,behavior:'instant'});
+      if(restoreReturn&&Number.isFinite(history.state?.mediaReturnY))window.scrollTo({top:history.state.mediaReturnY,behavior:'instant'});
       return;
     }
     if(!dialog.open||forcePosition){
@@ -1416,7 +1416,7 @@ body,input,select,textarea,button,.archive-note,.caption-meta,.archive-bottom,.p
     }else openInfo(kind);
     routing=false;
   }
-  window.addEventListener('popstate',()=>routePanel());
+  window.addEventListener('popstate',()=>routePanel(false,true));
   window.addEventListener('hashchange',()=>routePanel());
   window.addEventListener('hero-ready',()=>routePanel(true));
   window.addEventListener('sitecontentchange',()=>{allItems=Array.isArray(data.items)?data.items:[];pageSize=Math.min(12,Math.max(1,Number(data.pageSize)||12));page=0;renderFilters();updateSocial();updateContactMark();renderAboutMedia();render()});
