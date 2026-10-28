@@ -14,9 +14,14 @@
         "alt": "",
         "preview": {
           "source": "http://media-circle.ru/media/deb2167640e7ae52cf389815bc81659188989277.png",
-          "src": "http://media-circle.ru/media/dc5ef925a353cf33e06d8fe3489355990eda1363.webp",
+          "src": "https://media-circle.ru/media/dc5ef925a353cf33e06d8fe3489355990eda1363.webp",
           "width": 960,
-          "height": 1280
+          "height": 1280,
+          "mobile": {
+            "src": "https://media-circle.ru/media/b4232d3f2eadada36c6f10dcfa480c04f12396e0.webp",
+            "width": 750,
+            "height": 1000
+          }
         }
       },
       "summary": "Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.",
@@ -46,9 +51,14 @@
               "alt": "",
               "preview": {
                 "source": "http://media-circle.ru/media/435ff712d1a5e1635b4aad278bf1ae670368d1e9.jpg",
-                "src": "http://media-circle.ru/media/e970d4ba64c2a15733ed341784339b1d8696744a.webp",
+                "src": "https://media-circle.ru/media/e970d4ba64c2a15733ed341784339b1d8696744a.webp",
                 "width": 1024,
-                "height": 1280
+                "height": 1280,
+                "mobile": {
+                  "src": "https://media-circle.ru/media/ab5833525d1489b085fdea7a957321620e4035d1.webp",
+                  "width": 800,
+                  "height": 1000
+                }
               }
             },
             {
@@ -59,9 +69,14 @@
               "alt": "",
               "preview": {
                 "source": "http://media-circle.ru/media/b78c2599d7ffb8867cfe90242a0bf46847fdfdff.jpg",
-                "src": "http://media-circle.ru/media/18b3ee8727c688c5203e30d9a67c791794f2e168.webp",
+                "src": "https://media-circle.ru/media/18b3ee8727c688c5203e30d9a67c791794f2e168.webp",
                 "width": 1024,
-                "height": 1280
+                "height": 1280,
+                "mobile": {
+                  "src": "https://media-circle.ru/media/be569d171e4fff0b18f26e59c3b18235b7e8a411.webp",
+                  "width": 800,
+                  "height": 1000
+                }
               }
             }
           ],
@@ -106,9 +121,14 @@
               "alt": "",
               "preview": {
                 "source": "http://media-circle.ru/media/2033fec3b3a41db6a37bb9d0076685e6344c8bea.jpg",
-                "src": "http://media-circle.ru/media/e15a46f13aa7769d669d1aeb51f8f6ff88bacbe4.webp",
+                "src": "https://media-circle.ru/media/e15a46f13aa7769d669d1aeb51f8f6ff88bacbe4.webp",
                 "width": 1024,
-                "height": 1280
+                "height": 1280,
+                "mobile": {
+                  "src": "https://media-circle.ru/media/6079bd8520c4291c4e11c95d72d94c06c0c4a71d.webp",
+                  "width": 800,
+                  "height": 1000
+                }
               }
             },
             {
@@ -119,9 +139,14 @@
               "alt": "",
               "preview": {
                 "source": "http://media-circle.ru/media/a6197ae5ecd3f3247aedc58286c2091fd2cdf760.jpg",
-                "src": "http://media-circle.ru/media/9603210b33137e41a6741d29d5bf94e0e8b1aef1.webp",
+                "src": "https://media-circle.ru/media/9603210b33137e41a6741d29d5bf94e0e8b1aef1.webp",
                 "width": 1024,
-                "height": 1280
+                "height": 1280,
+                "mobile": {
+                  "src": "https://media-circle.ru/media/bc97d7190995bcccdfdb9f7bcb71ea9d3942ebf7.webp",
+                  "width": 800,
+                  "height": 1000
+                }
               }
             }
           ],
@@ -158,9 +183,14 @@
         "alt": "",
         "preview": {
           "source": "http://media-circle.ru/media/e02454870fbeb5079cb7cffe762e2a963a596b59.png",
-          "src": "http://media-circle.ru/media/74f82b95523de864331bb4decfb177d84558a904.webp",
+          "src": "https://media-circle.ru/media/74f82b95523de864331bb4decfb177d84558a904.webp",
           "width": 960,
-          "height": 1280
+          "height": 1280,
+          "mobile": {
+            "src": "https://media-circle.ru/media/54c375f77ce6548b1430690ab6d181ed99c32dee.webp",
+            "width": 750,
+            "height": 1000
+          }
         }
       },
       "summary": "Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.",
@@ -186,9 +216,14 @@
           "alt": "",
           "preview": {
             "source": "http://media-circle.ru/media/798b4875bb26fada2be604d0e8be1e77c0f671b8.png",
-            "src": "http://media-circle.ru/media/ac9e3af2478ac7a73e1db3d07bb12ab6b31b24bb.webp",
+            "src": "https://media-circle.ru/media/ac9e3af2478ac7a73e1db3d07bb12ab6b31b24bb.webp",
             "width": 1600,
-            "height": 900
+            "height": 900,
+            "mobile": {
+              "src": "https://media-circle.ru/media/85f6ac216643678fdd6a63be20f5bc8be91ddccb.webp",
+              "width": 800,
+              "height": 450
+            }
           }
         },
         {
@@ -210,9 +245,14 @@
           "alt": "",
           "preview": {
             "source": "http://media-circle.ru/media/dbf1176beccd2c111811310aae1325984b80fc65.png",
-            "src": "http://media-circle.ru/media/3ea82ba99de046fa338646c1be267253879a57b9.webp",
+            "src": "https://media-circle.ru/media/3ea82ba99de046fa338646c1be267253879a57b9.webp",
             "width": 1600,
-            "height": 900
+            "height": 900,
+            "mobile": {
+              "src": "https://media-circle.ru/media/8fa0497343f0dde703ea76fc3aeed3c7183332c8.webp",
+              "width": 800,
+              "height": 450
+            }
           }
         },
         {
@@ -226,9 +266,14 @@
           "alt": "",
           "preview": {
             "source": "http://media-circle.ru/media/73f2e0c3bc94084b2ffb3ba4385a0d282aa473fc.png",
-            "src": "http://media-circle.ru/media/71af1fe78aa4fa365ac48cfb70f85048e90fee5e.webp",
+            "src": "https://media-circle.ru/media/71af1fe78aa4fa365ac48cfb70f85048e90fee5e.webp",
             "width": 1600,
-            "height": 900
+            "height": 900,
+            "mobile": {
+              "src": "https://media-circle.ru/media/f5b462fe513be1d769a4958e859311ac4ec33f4c.webp",
+              "width": 800,
+              "height": 450
+            }
           }
         },
         {
@@ -256,9 +301,14 @@
         "alt": "",
         "preview": {
           "source": "http://media-circle.ru/media/60003797da7b8e5090cde9020f74f04c0c076da5.png",
-          "src": "http://media-circle.ru/media/b6996998c24f480a60549456a31f2bdf19010cf1.webp",
+          "src": "https://media-circle.ru/media/b6996998c24f480a60549456a31f2bdf19010cf1.webp",
           "width": 960,
-          "height": 1280
+          "height": 1280,
+          "mobile": {
+            "src": "https://media-circle.ru/media/4112c232f2e24cdd8a024f5e82829d272f3b7468.webp",
+            "width": 750,
+            "height": 1000
+          }
         }
       },
       "summary": "Это пример карточки. Здесь появятся название, описание и документация встречи или проекта.",
@@ -284,9 +334,14 @@
           "alt": "",
           "preview": {
             "source": "http://media-circle.ru/media/90a8a036455df4a2ec39fb1b58d1927b47f3e215.png",
-            "src": "http://media-circle.ru/media/17e24e4a31566fad42af145db02004ae9ea91660.webp",
+            "src": "https://media-circle.ru/media/17e24e4a31566fad42af145db02004ae9ea91660.webp",
             "width": 1600,
-            "height": 900
+            "height": 900,
+            "mobile": {
+              "src": "https://media-circle.ru/media/2fb69b0bb339f69a575273e477500d08395af383.webp",
+              "width": 800,
+              "height": 450
+            }
           }
         },
         {
@@ -308,9 +363,14 @@
           "alt": "",
           "preview": {
             "source": "http://media-circle.ru/media/9389fca4d54d254b071d314ac79f3106d4f19a2e.png",
-            "src": "http://media-circle.ru/media/5753cdb897b18304978d99f74f7d5cc02005f7f8.webp",
+            "src": "https://media-circle.ru/media/5753cdb897b18304978d99f74f7d5cc02005f7f8.webp",
             "width": 1600,
-            "height": 900
+            "height": 900,
+            "mobile": {
+              "src": "https://media-circle.ru/media/6c45ae51973a05aa7c9359a75934e5614daf4593.webp",
+              "width": 800,
+              "height": 450
+            }
           }
         },
         {
@@ -1318,9 +1378,14 @@
           "id": "element-mvmftsy8-fmcgg",
           "preview": {
             "source": "http://media-circle.ru/media/798b4875bb26fada2be604d0e8be1e77c0f671b8.png",
-            "src": "http://media-circle.ru/media/ac9e3af2478ac7a73e1db3d07bb12ab6b31b24bb.webp",
+            "src": "https://media-circle.ru/media/ac9e3af2478ac7a73e1db3d07bb12ab6b31b24bb.webp",
             "width": 1600,
-            "height": 900
+            "height": 900,
+            "mobile": {
+              "src": "https://media-circle.ru/media/85f6ac216643678fdd6a63be20f5bc8be91ddccb.webp",
+              "width": 800,
+              "height": 450
+            }
           }
         },
         {
@@ -1334,9 +1399,14 @@
           "id": "element-mvmfvt32-oe1z3",
           "preview": {
             "source": "http://media-circle.ru/media/435ff712d1a5e1635b4aad278bf1ae670368d1e9.jpg",
-            "src": "http://media-circle.ru/media/e970d4ba64c2a15733ed341784339b1d8696744a.webp",
+            "src": "https://media-circle.ru/media/e970d4ba64c2a15733ed341784339b1d8696744a.webp",
             "width": 1024,
-            "height": 1280
+            "height": 1280,
+            "mobile": {
+              "src": "https://media-circle.ru/media/ab5833525d1489b085fdea7a957321620e4035d1.webp",
+              "width": 800,
+              "height": 1000
+            }
           }
         },
         {
@@ -1352,9 +1422,14 @@
           "y": 0,
           "preview": {
             "source": "http://media-circle.ru/media/b78c2599d7ffb8867cfe90242a0bf46847fdfdff.jpg",
-            "src": "http://media-circle.ru/media/18b3ee8727c688c5203e30d9a67c791794f2e168.webp",
+            "src": "https://media-circle.ru/media/18b3ee8727c688c5203e30d9a67c791794f2e168.webp",
             "width": 1024,
-            "height": 1280
+            "height": 1280,
+            "mobile": {
+              "src": "https://media-circle.ru/media/be569d171e4fff0b18f26e59c3b18235b7e8a411.webp",
+              "width": 800,
+              "height": 1000
+            }
           }
         },
         {
@@ -1368,9 +1443,14 @@
           "id": "element-mvmhpgbl-w9ugn",
           "preview": {
             "source": "http://media-circle.ru/media/8bf103562c3b042c93025f7fe59cf8012e31c0c5.png",
-            "src": "http://media-circle.ru/media/c91d05067ee0ba115d326f7daf51f70434c76d09.webp",
+            "src": "https://media-circle.ru/media/c91d05067ee0ba115d326f7daf51f70434c76d09.webp",
             "width": 1600,
-            "height": 900
+            "height": 900,
+            "mobile": {
+              "src": "https://media-circle.ru/media/c41390b6b7360f4d52672e4ff6e82d5590ee64a3.webp",
+              "width": 800,
+              "height": 450
+            }
           }
         }
       ],
