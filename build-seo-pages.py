@@ -4,16 +4,29 @@ from html import escape
 from html.parser import HTMLParser
 from urllib.parse import urlparse
 import json,re
+import shutil
+import sys
 
 ROOT=Path(__file__).resolve().parent
 BASE='https://media-circle.ru/'
 data=json.loads((ROOT/'content.json').read_text(encoding='utf-8-sig'))
 index=(ROOT/'index.html').read_text(encoding='utf-8')
+def normalize_text(value):
+ return value.replace('http://media-circle.ru','https://media-circle.ru').replace('"instagram":"instagram.com/k_media_circle"','"instagram":"https://www.instagram.com/k_media_circle/"').replace('"instagram": "instagram.com/k_media_circle"','"instagram": "https://www.instagram.com/k_media_circle/"')
+index=normalize_text(index)
+data=json.loads(normalize_text(json.dumps(data,ensure_ascii=False)))
 home_title='Медиакружок | Красноярск'
 home_description='Сообщество артистов из Сибири, которым интересно медиаискусство.'
 index=re.sub(r'<title>.*?</title>','<title>'+home_title+'</title>',index,count=1)
 for attr,key,value in [('name','description',home_description),('property','og:title',home_title),('property','og:description',home_description),('name','twitter:title',home_title),('name','twitter:description',home_description)]:
  index=re.sub(r'(<meta '+attr+'="'+re.escape(key)+r'" content=")[^"]*(">)',lambda m:m[1]+value+m[2],index,count=1)
+canonical='<link rel="canonical" href="https://media-circle.ru/">'
+if re.search(r'<link[^>]*rel="canonical"[^>]*>',index):index=re.sub(r'<link[^>]*rel="canonical"[^>]*>',canonical,index)
+else:index=index.replace('</head>',canonical+'\n</head>',1)
+home_schema={'@context':'https://schema.org','@graph':[{'@type':'Organization','@id':BASE+'#organization','name':'Медиакружок','url':BASE,'description':home_description,'email':'hello@media-circle.ru','location':{'@type':'City','name':'Красноярск'},'sameAs':['https://t.me/k_media_circle','https://www.instagram.com/k_media_circle/']},{'@type':'WebSite','@id':BASE+'#website','url':BASE,'name':'Медиакружок','inLanguage':'ru-RU','publisher':{'@id':BASE+'#organization'}}]}
+index=re.sub(r'<script type="application/ld\+json">.*?</script>','',index,flags=re.S)
+index=re.sub(r'\s*</head>','\n<script type="application/ld+json">'+json.dumps(home_schema,ensure_ascii=False)+'</script>\n</head>',index,count=1)
+index=index.replace("if(['karst','livecoding','pustotu','angarida'].includes(item.slug))", "if(item.type==='project'&&!item.demo)")
 embedded=json.loads(re.search(r'window.MEDIA_CONTENT=(.*?);?</script>',index,re.S)[1].removesuffix(';'))
 assert embedded==data,'Export both index.html and content.json together before building.'
 def url(v):
@@ -54,18 +67,24 @@ def blocks(bs,title):
   elif b.get('text'):out.append('<p>'+escape(b['text'])+'</p>')
  return '\n'.join(out)
 items=[i for i in data['items'] if i.get('type')=='project' and not i.get('demo')]
+for item in items:assert re.fullmatch(r'[a-z0-9][a-z0-9-]{0,63}',item.get('slug','')), 'Invalid project slug'
 descriptions={
  'karst':'Видеоарт Инны Шестаковой: геологические формы и генеративная графика. Проект Медиакружка для Музея геологии Центральной Сибири в Красноярске, 2026.',
  'livecoding':'Аудиовизуальный лайвкодинг: музыка Алексея Акимова и визуал Инны Шестаковой создаются в реальном времени. Медиакружок, 29 сентября 2026 года.',
  'pustotu':'Барельефы Алексея Акимова и видеомэппинг Инны Шестаковой в проекте «Невечная мерзлота». Документация Медиакружка, 2026.',
  'angarida':'Аудиовизуальный перформанс Медиакружка в Красноярске в рамках выставки «Ангарида: место, где тебе рады». Работа со звуком и генеративной графикой.'}
 CSS='''*{box-sizing:border-box}body{margin:0;background:#10110f;color:#e9e9e1;font:18px/1.65 Arial,Helvetica,sans-serif}a{color:inherit;text-underline-offset:5px}a:hover,a:focus-visible{color:#c8ec01}:focus-visible{outline:2px solid #c8ec01;outline-offset:6px}header,main,footer{max-width:1120px;margin:auto;padding:28px 6vw}header{display:flex;justify-content:space-between;gap:24px;align-items:center;border-bottom:1px solid #393d35}nav{display:flex;gap:24px;flex-wrap:wrap;font-size:15px}.brand{font-weight:bold;text-decoration:none;letter-spacing:-.04em;font-size:24px}main{padding-top:64px;padding-bottom:80px}h1{font-size:clamp(36px,6vw,76px);line-height:1.04;letter-spacing:-.055em;font-weight:500;margin:20px 0 32px;overflow-wrap:anywhere}h2{font-size:30px;line-height:1.2;font-weight:500;margin:56px 0 24px}h3,h4{line-height:1.3}.lead{font-size:clamp(21px,2.8vw,30px);line-height:1.4;max-width:860px;margin-bottom:48px;color:#cbd0c2}.body{max-width:900px}.body p,.body li{margin-bottom:22px}.body a{overflow-wrap:anywhere}.body img,.body video{display:block;width:100%;height:auto;max-height:720px;object-fit:contain;background:#171817}figure{margin:30px 0}.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.gallery figure{margin:10px 0}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.card{display:block;padding:26px;border:1px solid #393d35;text-decoration:none;background:#171817}.card h2{margin:0 0 20px}.card p{font-size:16px;color:#a8aea1}.eyebrow{font-size:13px;color:#c8ec01;text-transform:uppercase;letter-spacing:.1em}.back{display:inline-block;margin:36px 0 0}footer{border-top:1px solid #393d35;font-size:15px;padding-top:32px;padding-bottom:40px}footer a{margin-right:24px}.skip{position:absolute;top:-100px}.skip:focus{top:0;background:#10110f;padding:12px}@media(max-width:600px){header{align-items:flex-start;flex-direction:column}.cards,.gallery{grid-template-columns:1fr}main{padding-top:36px}.body{font-size:17px}}'''
-for item in items:item['summary']=descriptions[item['slug']]
+for item in items:
+ slug=item['slug']
+ if slug not in descriptions:
+  paragraphs=[plain(rich(b)) for b in item.get('blocks',[]) if b.get('kind')=='text']
+  descriptions[slug]=(next((x for x in paragraphs if len(x)>90),item['title']+' — проект Медиакружка.'))[:240]
+ item['summary']=descriptions[slug]
 (ROOT/'content.json').write_text(json.dumps(data,ensure_ascii=False,indent=2),encoding='utf8')
 index=re.sub(r'(window.MEDIA_CONTENT=).*?(;?</script>)',lambda m:m[1]+json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('<',chr(92)+'u003c')+';'+m[2].lstrip(';'),index,count=1,flags=re.S)
 if 'data-project-page' not in index:
  old='if(Array.isArray(item.blocks)){window.MEDIA_TOOLS.renderBlocks(container,item.blocks,mediaNode);return}'
- new="if(['karst','livecoding','pustotu','angarida'].includes(item.slug)){const link=el('a','text-link','Страница проекта ↗');link.href='/'+item.slug+'.html';link.setAttribute('data-project-page','');const p=el('p');p.append(link);container.append(p);} "+old
+ new="if(item.type==='project'&&!item.demo){const link=el('a','text-link','Страница проекта ↗');link.href='/'+encodeURIComponent(item.slug)+'.html';link.setAttribute('data-project-page','');const p=el('p');p.append(link);container.append(p);} "+old
  assert index.count(old)==1
  index=index.replace(old,new,1)
 def page(filename,title,description,body,schema_type='WebPage',image=None):
@@ -95,4 +114,12 @@ else:index=index.replace('    <footer class="contact"',section+'\n    <footer cl
 (ROOT/'index.html').write_text(index,encoding='utf8',newline='')
 urls=[BASE]+[BASE+f for f in ['about.html','projects.html']+[i['slug']+'.html' for i in items]]
 (ROOT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+x+'</loc></url>' for x in urls)+'</urlset>\n',encoding='utf8')
+(ROOT/'robots.txt').write_text('User-agent: *\nAllow: /\n\nSitemap: https://media-circle.ru/sitemap.xml\n',encoding='utf8')
+if '--stage' in sys.argv:
+ stage=ROOT/'_site'
+ stage.mkdir(exist_ok=True)
+ for p in ROOT.iterdir():
+  if p.is_file() and (p.suffix=='.html' or p.name in ('content.json','sitemap.xml','robots.txt','CNAME','.nojekyll')):shutil.copy2(p,stage/p.name)
+ if (ROOT/'media').is_dir():shutil.copytree(ROOT/'media',stage/'media',dirs_exist_ok=True)
+ assert (stage/'index.html').is_file()
 print('Generated:',', '.join(urls))
