@@ -47,6 +47,9 @@ canonical='<link rel="canonical" href="https://media-circle.ru/">'
 if re.search(r'<link[^>]*rel="canonical"[^>]*>',index):index=re.sub(r'<link[^>]*rel="canonical"[^>]*>',canonical,index)
 
 else:index=index.replace('</head>',canonical+'\n</head>',1)
+favicon = '<link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">'
+if not re.search(r'<link\b[^>]*\brel="(?:shortcut )?icon"', index, re.I):
+    index = index.replace('</head>', favicon + '\n</head>', 1)
 
 home_schema={'@context':'https://schema.org','@graph':[{'@type':'Organization','@id':BASE+'#organization','name':'Медиакружок','url':BASE,'description':home_description,'email':'hello@media-circle.ru','location':{'@type':'City','name':'Красноярск'},'sameAs':['https://t.me/k_media_circle','https://www.instagram.com/k_media_circle/']},{'@type':'WebSite','@id':BASE+'#website','url':BASE,'name':'Медиакружок','inLanguage':'ru-RU','publisher':{'@id':BASE+'#organization'}}]}
 
