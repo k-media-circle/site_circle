@@ -63,6 +63,11 @@ embedded=json.loads(re.search(r'window.MEDIA_CONTENT=(.*?);?</script>',index,re.
 
 assert embedded==data,'Export both index.html and content.json together before building.'
 
+# Ignore the retired tools category in older editor exports.
+data['items'] = [item for item in data['items'] if item.get('type') != 'meeting']
+index = re.sub(r'<button[^>]*data-filter="meeting"[^>]*>[^<]*</button>', '', index)
+index = re.sub(r",\s*\{id:'meeting',\s*label:'инструменты'\}", '', index)
+index = index.replace('Скоро здесь появятся проекты и инструменты.', 'Скоро здесь появятся проекты.')
 def url(v):
 
  v=str(v or '').replace('http://media-circle.ru','https://media-circle.ru')

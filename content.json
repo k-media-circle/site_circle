@@ -409,29 +409,6 @@
         }
       ],
       "slug": "angarida"
-    },
-    {
-      "id": "project-mvkvgqws",
-      "type": "meeting",
-      "title": "спектрофоник",
-      "demo": false,
-      "cover": {
-        "kind": "image",
-        "src": "",
-        "alt": ""
-      },
-      "blocks": [
-        {
-          "kind": "text",
-          "text": "Это инструмент к нашему перформансу, который пока не состоялся. Мы решили поделиться им, но сделаем это немного позже.",
-          "src": "",
-          "url": "",
-          "style": {},
-          "richHTML": "Это инструмент к <a href=\"https://media-circle.ru/#angarida\" target=\"_blank\" rel=\"noopener noreferrer\">нашему перформансу</a>, который пока не состоялся. Мы решили поделиться им, но сделаем это немного позже.<p></p>"
-        }
-      ],
-      "coverText": "спектрофоник",
-      "slug": "spektrofonik"
     }
   ],
   "aboutMedia": [
