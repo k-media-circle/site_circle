@@ -1,4 +1,4 @@
-"""Run after a site export: python build-seo-pages.py. No dependencies."""
+"""Restore home-page SEO after a site export and stage the single-page website."""
 
 from pathlib import Path
 
@@ -108,40 +108,6 @@ def rich(b):
 
 def plain(s):return re.sub(r'\s+',' ',re.sub('<[^>]+>',' ',s)).strip()
 
-def media(b,title):
-
- src=url((b.get('preview') or {}).get('src') or b.get('src'))
-
- if not src:return ''
-
- alt=escape(b.get('alt') or 'Документация проекта «'+title+'»',quote=True)
-
- if b.get('kind')=='video':
-
-  if 'youtu' in src:return '<p><a href="'+escape(src,quote=True)+'">Смотреть видеозапись</a></p>'
-
-  return '<figure><video controls playsinline preload="none" src="'+escape(src,quote=True)+'" aria-label="'+alt+'"></video></figure>'
-
- return '<figure><img loading="lazy" decoding="async" src="'+escape(src,quote=True)+'" alt="'+alt+'"></figure>'
-
-def blocks(bs,title):
-
- out=[]
-
- for b in bs:
-
-  kind=b.get('kind')
-
-  if kind in ('text','heading'):out.append(rich(b))
-
-  elif kind in ('image','video'):out.append(media(b,title))
-
-  elif kind=='gallery':out.append('<div class="gallery">'+''.join(media(x,title) for x in b.get('items',[]))+'</div>')
-
-  elif b.get('text'):out.append('<p>'+escape(b['text'])+'</p>')
-
- return '\n'.join(out)
-
 items=[i for i in data['items'] if i.get('type')=='project' and not i.get('demo')]
 
 for item in items:assert re.fullmatch(r'[a-z0-9][a-z0-9-]{0,63}',item.get('slug','')), 'Invalid project slug'
@@ -155,8 +121,6 @@ descriptions={
  'pustotu':'Барельефы Алексея Акимова и видеомэппинг Инны Шестаковой в проекте «Невечная мерзлота». Документация Медиакружка, 2026.',
 
  'angarida':'Аудиовизуальный перформанс Медиакружка в Красноярске в рамках выставки «Ангарида: место, где тебе рады». Работа со звуком и генеративной графикой.'}
-
-CSS='''*{box-sizing:border-box}body{margin:0;background:#10110f;color:#e9e9e1;font:18px/1.65 Arial,Helvetica,sans-serif}a{color:inherit;text-underline-offset:5px}a:hover,a:focus-visible{color:#c8ec01}:focus-visible{outline:2px solid #c8ec01;outline-offset:6px}header,main,footer{max-width:1120px;margin:auto;padding:28px 6vw}header{display:flex;justify-content:space-between;gap:24px;align-items:center;border-bottom:1px solid #393d35}nav{display:flex;gap:24px;flex-wrap:wrap;font-size:15px}.brand{font-weight:bold;text-decoration:none;letter-spacing:normal;font-size:24px}main{padding-top:64px;padding-bottom:80px}h1{font-size:clamp(36px,6vw,76px);line-height:1.04;letter-spacing:normal;font-weight:500;margin:20px 0 32px;overflow-wrap:anywhere}h2{font-size:30px;line-height:1.2;font-weight:500;margin:56px 0 24px}h3,h4{line-height:1.3}.lead{font-size:clamp(21px,2.8vw,30px);line-height:1.4;max-width:860px;margin-bottom:48px;color:#cbd0c2}.body{max-width:900px}.body p,.body li{margin-bottom:22px}.body a{overflow-wrap:anywhere}.body img,.body video{display:block;width:100%;height:auto;max-height:720px;object-fit:contain;background:#171817}figure{margin:30px 0}.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.gallery figure{margin:10px 0}.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.card{display:block;padding:26px;border:1px solid #393d35;text-decoration:none;background:#171817}.card h2{margin:0 0 20px}.card p{font-size:16px;color:#a8aea1}.eyebrow{font-size:13px;color:#c8ec01;text-transform:uppercase;letter-spacing:.1em}.back{display:inline-block;margin:36px 0 0}footer{border-top:1px solid #393d35;font-size:15px;padding-top:32px;padding-bottom:40px}footer a{margin-right:24px}.skip{position:absolute;top:-100px}.skip:focus{top:0;background:#10110f;padding:12px}@media(max-width:600px){header{align-items:flex-start;flex-direction:column}.cards,.gallery{grid-template-columns:1fr}main{padding-top:36px}.body{font-size:17px}}'''
 
 for item in items:
 
@@ -174,49 +138,11 @@ for item in items:
 
 index=re.sub(r'(window.MEDIA_CONTENT=).*?(;?</script>)',lambda m:m[1]+json.dumps(data,ensure_ascii=False,separators=(',',':')).replace('<',chr(92)+'u003c')+';'+m[2].lstrip(';'),index,count=1,flags=re.S)
 
-def page(filename,title,description,body,schema_type='WebPage',image=None):
-
- canonical=BASE+filename
-
- image=image or BASE+'media/a640081616316f353845c1e004c6c9053b931635.png'
-
- graph={'@context':'https://schema.org','@type':schema_type,'name':title,'description':description,'url':canonical,'inLanguage':'ru-RU','isPartOf':{'@type':'WebSite','name':'Медиакружок','url':BASE}}
-
- if schema_type=='CreativeWork':graph['publisher']={'@type':'Organization','name':'Медиакружок','url':BASE}
-
- graph_json=json.dumps(graph,ensure_ascii=False).replace('<',chr(92)+'u003c')
-
- doc=f'''<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(title)} — Медиакружок</title><meta name="description" content="{escape(description,quote=True)}"><link rel="canonical" href="{canonical}"><meta property="og:type" content="website"><meta property="og:locale" content="ru_RU"><meta property="og:site_name" content="Медиакружок"><meta property="og:title" content="{escape(title,quote=True)} — Медиакружок"><meta property="og:description" content="{escape(description,quote=True)}"><meta property="og:url" content="{canonical}"><meta property="og:image" content="{escape(image,quote=True)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{escape(title,quote=True)} — Медиакружок"><meta name="twitter:description" content="{escape(description,quote=True)}"><meta name="twitter:image" content="{escape(image,quote=True)}"><script type="application/ld+json">{graph_json}</script><link rel="icon" type="image/png" sizes="64x64" href="https://media-circle.ru/favicon.png"><style>{CSS}</style></head><body><a class="skip" href="#content">К содержанию</a><header><a class="brand" href="/">медиакружок</a><nav aria-label="Основная навигация"><a href="/#about">о кружке</a><a href="/#practice">практика</a><a href="/#contact">связь</a></nav></header><main id="content"><div class="eyebrow">искусство × технологии · Красноярск · Сибирь</div><h1>{escape(title)}</h1>{body}</main><footer><a href="https://t.me/k_media_circle">Telegram</a><a href="https://www.instagram.com/k_media_circle/">Instagram</a><a href="mailto:hello@media-circle.ru">hello@media-circle.ru</a></footer></body></html>'''
-
- (ROOT/filename).write_text(doc,encoding='utf8')
-
-for i in items:
-
- slug=i['slug'];title=i['title'];desc=descriptions[slug]
-
- body='<p class="lead">'+escape(desc)+'</p><article class="body">'+blocks(i.get('blocks',[]),title)+'</article>'
-
-
-
- body+='<h2>Другие проекты</h2><nav>'+''.join('<a href="/'+x['slug']+'.html">'+escape(x['title'])+'</a>' for x in items if x!=i)+'</nav>'
-
- page(slug+'.html',title,desc,body,'CreativeWork',url((i.get('cover',{}).get('preview') or {}).get('src')) or None)
-
-cards='<div class="cards">'+''.join('<a class="card" href="/'+i['slug']+'.html"><h2>'+escape(i['title'])+'</h2><p>'+escape(descriptions[i['slug']])+'</p></a>' for i in items)+'</div>'
-
-
-aboutdesc='Медиакружок — сообщество художников, музыкантов и дизайнеров Сибири. Медиаискусство, генеративные и аудиовизуальные практики, встречи в Красноярске.'
-
-about='<p class="lead">'+aboutdesc+'</p><article class="body">'+blocks(data.get('aboutBlocks',[]),'Медиакружок')+'</article><h2>Как присоединиться</h2><p>Связаться с сообществом и узнать о встречах можно в <a href="https://t.me/k_media_circle">Telegram</a> или по почте <a href="mailto:hello@media-circle.ru">hello@media-circle.ru</a>.</p><h2>Практика сообщества</h2>'+cards
-
-
-# Retired standalone entry pages redirect to the interactive home.
-for retired in ['about.html','projects.html']:(ROOT/retired).write_text('<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>медиакружок</title><meta name="robots" content="noindex, follow"><meta http-equiv="refresh" content="0;url=https://media-circle.ru/"><link rel="canonical" href="https://media-circle.ru/"><script>location.replace(\'https://media-circle.ru/\');</script></head><body><a href="https://media-circle.ru/">Перейти на главную</a></body></html>',encoding='utf8')
 index=re.sub(r'<!-- seo-pages:start -->.*?<!-- seo-pages:end -->','',index,flags=re.S)
 index=re.sub(r"if\(item.type==='project'&&!item.demo\)\{const link=el\('a','text-link','Страница проекта ↗'\);[\s\S]*?container.append\(p\);\}",'',index)
 (ROOT/'index.html').write_text(index,encoding='utf8',newline='')
 
-urls=[BASE]+[BASE+f for f in [i['slug']+'.html' for i in items]]
+urls=[BASE]
 
 (ROOT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+x+'</loc></url>' for x in urls)+'</urlset>\n',encoding='utf8')
 
@@ -228,13 +154,22 @@ if '--stage' in sys.argv:
 
  stage.mkdir(exist_ok=True)
 
+ # Replace retired standalone pages with redirects, including on reused builds.
+ for staged in stage.glob('*.html'):
+  if staged.name!='index.html' and not re.fullmatch(r'google[a-f0-9]+\.html|yandex_[a-f0-9]+\.html',staged.name):staged.unlink()
+
  for p in ROOT.iterdir():
 
-  if p.is_file() and (p.suffix=='.html' or p.name in ('content.json','sitemap.xml','robots.txt','CNAME','.nojekyll','favicon.png','favicon.ico')):shutil.copy2(p,stage/p.name)
+  if p.is_file() and (p.name in ('index.html','content.json','sitemap.xml','robots.txt','CNAME','.nojekyll','favicon.png','favicon.ico') or re.fullmatch(r'google[a-f0-9]+\.html|yandex_[a-f0-9]+\.html',p.name)):shutil.copy2(p,stage/p.name)
 
  if (ROOT/'media').is_dir():shutil.copytree(ROOT/'media',stage/'media',dirs_exist_ok=True)
+
+ redirect='''<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>медиакружок</title><meta name="robots" content="noindex, follow"><meta http-equiv="refresh" content="0;url=https://media-circle.ru/"><link rel="canonical" href="https://media-circle.ru/"></head><body><a href="https://media-circle.ru/">Перейти на главную</a></body></html>'''
+ for retired in ('about.html','projects.html','karst.html','livecoding.html','pustotu.html','angarida.html'):
+  (stage/retired).write_text(redirect,encoding='utf-8')
 
  assert (stage/'index.html').is_file()
 
 print('Generated:',', '.join(urls))
+
 
