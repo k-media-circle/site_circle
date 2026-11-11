@@ -536,6 +536,28 @@
       ],
       "slug": "novyy",
       "date": "31.10.2026"
+    },
+    {
+      "id": "project-mwc8wcrr",
+      "type": "project",
+      "title": "DARK CAR",
+      "demo": true,
+      "cover": {
+        "kind": "image",
+        "src": "",
+        "alt": ""
+      },
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "Здесь скоро будет описание проекта.",
+          "src": "",
+          "url": "",
+          "style": {},
+          "richHTML": "<p>Здесь скоро будет описание проекта.</p>"
+        }
+      ],
+      "slug": "novyy-2"
     }
   ],
   "aboutMedia": [
