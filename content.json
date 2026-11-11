@@ -409,6 +409,133 @@
         }
       ],
       "slug": "angarida"
+    },
+    {
+      "id": "project-mwc8d2md",
+      "type": "project",
+      "title": "DARK NIGHT: генератив",
+      "demo": false,
+      "cover": {
+        "kind": "image",
+        "src": "https://media-circle.ru/media/2db5c198f91bec49427b7bc32d8d2fd13bc0d3e9.png",
+        "path": "media/2db5c198f91bec49427b7bc32d8d2fd13bc0d3e9.png",
+        "filename": "night.png",
+        "alt": ""
+      },
+      "blocks": [
+        {
+          "kind": "image",
+          "text": "",
+          "src": "https://media-circle.ru/media/1edea2694e3eb617564de6fccae34539e5fd6fc1.png",
+          "url": "",
+          "style": {},
+          "path": "media/1edea2694e3eb617564de6fccae34539e5fd6fc1.png",
+          "filename": "Свынимок.PNG",
+          "alt": ""
+        },
+        {
+          "kind": "text",
+          "text": "Для вечеринки DARK NIGHT команды TOK мы создали серию абстрактных генеративных визуальных композиций.В основе визуала лежат контрастные монохромные текстуры, непрерывно меняющиеся органические формы и движение. Графика была разработана специально под мрачную, декадентскую эстетику события и стала частью его визуального оформления.Отдельная благодарность Юлии.\n\n",
+          "src": "",
+          "url": "",
+          "style": {},
+          "richHTML": "<p><span>Для вечеринки DARK NIGHT команды </span><a href=\"https://t.me/tok_impulse\" target=\"_blank\" rel=\"noopener noreferrer\"><span>TOK</span></a><span>&nbsp;мы создали серию абстрактных генеративных визуальных композиций.</span></p><p><span>В основе визуала лежат контрастные монохромные текстуры, непрерывно меняющиеся органические формы и движение. Графика была разработана специально под мрачную, декадентскую эстетику события и стала частью его визуального оформления.</span></p><p><span>Отдельная благодарность </span><a href=\"https://t.me/northonfire\" target=\"_blank\" rel=\"noopener noreferrer\"><span>Юлии</span></a><span>.</span></p>\n\n<p></p>"
+        },
+        {
+          "kind": "video",
+          "text": "",
+          "src": "https://media-circle.ru/media/84d1db27423f66c5fe8d0ed844179f30218467f7.mov",
+          "url": "",
+          "style": {},
+          "path": "media/84d1db27423f66c5fe8d0ed844179f30218467f7.mov",
+          "filename": "IMG_5013.MOV",
+          "alt": ""
+        },
+        {
+          "kind": "gallery",
+          "text": "",
+          "src": "",
+          "url": "",
+          "items": [
+            {
+              "kind": "image",
+              "src": "https://media-circle.ru/media/103cf5c1ee07680dd36158e691ab7b2d1b952ddf.png",
+              "path": "media/103cf5c1ee07680dd36158e691ab7b2d1b952ddf.png",
+              "filename": "Снимок.PNG",
+              "alt": ""
+            },
+            {
+              "kind": "image",
+              "src": "https://media-circle.ru/media/6596e6aa9c4083c384adedbfad5c33eb3f1e5de5.png",
+              "path": "media/6596e6aa9c4083c384adedbfad5c33eb3f1e5de5.png",
+              "filename": "Снимррок.PNG",
+              "alt": ""
+            }
+          ],
+          "columns": 2,
+          "mobileColumns": 1,
+          "gap": 12,
+          "ratio": "1/1",
+          "style": {}
+        },
+        {
+          "kind": "image",
+          "text": "",
+          "src": "https://media-circle.ru/media/ed4c762fc7bf2de3b2865fd71c68213b7068495e.png",
+          "url": "",
+          "style": {},
+          "path": "media/ed4c762fc7bf2de3b2865fd71c68213b7068495e.png",
+          "filename": "vlcsnap-2026-11-11-18h12m48s419.png",
+          "alt": ""
+        },
+        {
+          "kind": "gallery",
+          "text": "",
+          "src": "",
+          "url": "",
+          "items": [
+            {
+              "kind": "image",
+              "src": "https://media-circle.ru/media/885849894b73d181dda026c7a95864908337d789.png",
+              "path": "media/885849894b73d181dda026c7a95864908337d789.png",
+              "filename": "vlcsnap-2026-11-11-18h13m12s403.png",
+              "alt": ""
+            },
+            {
+              "kind": "image",
+              "src": "https://media-circle.ru/media/cc248377730250a8dc69b91bbb38df49df0b745d.png",
+              "path": "media/cc248377730250a8dc69b91bbb38df49df0b745d.png",
+              "filename": "vlcsnap-2026-11-11-18h13m54s385.png",
+              "alt": ""
+            }
+          ],
+          "columns": 2,
+          "mobileColumns": 1,
+          "gap": 12,
+          "ratio": "1/1",
+          "style": {}
+        },
+        {
+          "kind": "video",
+          "text": "",
+          "src": "https://media-circle.ru/media/2224d4a8d46da156ea81f29600de27361e9ec424.mov",
+          "url": "",
+          "style": {},
+          "path": "media/2224d4a8d46da156ea81f29600de27361e9ec424.mov",
+          "filename": "IMG_5103.MOV",
+          "alt": ""
+        },
+        {
+          "kind": "text",
+          "text": "фото: Никита Бобылев / nikkanph.ru\n\n\n\n",
+          "src": "",
+          "url": "",
+          "style": {},
+          "richHTML": "<div><div><div></div><div></div><div></div></div>фото: Никита Бобылев /<font style=\"color: rgb(200, 236, 1);\"> <u>nikkanph.ru\n\n\n\n</u></font></div><p></p>"
+        }
+      ],
+      "slug": "novyy",
+      "date": "31.11.2026"
     }
   ],
   "aboutMedia": [
