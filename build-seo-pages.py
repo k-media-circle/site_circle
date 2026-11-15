@@ -140,6 +140,11 @@ index=re.sub(r'(window.MEDIA_CONTENT=).*?(;?</script>)',lambda m:m[1]+json.dumps
 
 index=re.sub(r'<!-- seo-pages:start -->.*?<!-- seo-pages:end -->','',index,flags=re.S)
 index=re.sub(r"if\(item.type==='project'&&!item.demo\)\{const link=el\('a','text-link','Страница проекта ↗'\);[\s\S]*?container.append\(p\);\}",'',index)
+# Add the photo editor to the main navigation after each export.
+emulsion_link = '<a href="/emulsion.html" target="_blank" rel="noopener">эмульсия</a>'
+if 'href="/emulsion.html"' not in index:
+    index = re.sub(r'(<nav aria-label="Основная навигация">.*?)(</nav>)',
+                   lambda match: match[1] + emulsion_link + match[2], index, count=1, flags=re.S)
 (ROOT/'index.html').write_text(index,encoding='utf8',newline='')
 
 urls=[BASE]
@@ -168,6 +173,7 @@ if '--stage' in sys.argv:
  for retired in ('about.html','projects.html','karst.html','livecoding.html','pustotu.html','angarida.html'):
   (stage/retired).write_text(redirect,encoding='utf-8')
 
+ shutil.copy2(ROOT/'emulsion.html', stage/'emulsion.html')
  assert (stage/'index.html').is_file()
 
 print('Generated:',', '.join(urls))
